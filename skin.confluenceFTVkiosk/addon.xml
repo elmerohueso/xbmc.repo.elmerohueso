@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon
+  id="skin.confluenceFTVkiosk"
+  version="1.0"
+  name="Confluence (Fire TV Kiosk)"
+  provider-name="Jezz_X, Team XBMC, modified by elmerohueso">
+  <requires>
+    <import addon="xbmc.gui" version="5.0.0"/>
+  </requires>
+  <extension
+    point="xbmc.gui.skin"
+    defaultthemename="textures.xbt"
+    debugging="false"
+    effectslowdown="0.75">
+    <res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Confluence skin by Jezz_X. (XBMC's default skin), modified by elmerohueso.</summary>
+    <description lang="en">The default Confluence skin with some modifications, meant to go with elmerohueso's Launcher build of XBMC for the Amazon Fire TV (see http://forum.xda-developers.com/showthread.php?t=2790392).</description>
+    <platform>all</platform>
+  </extension>
+</addon>

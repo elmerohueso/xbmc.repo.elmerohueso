@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.screensaver.logoff" name="Logoff" version="1.0" provider-name="elmerohueso">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.ui.screensaver" library="addon.py">
+	<provides></provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>"Screensaver" that will log off your XBMC profile</summary>
+    <description>Not really a screensaver, but makes your system automatically log off an XBMC profile according to your "Screensaver time".</description>
+  </extension>
+</addon>
