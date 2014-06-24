@@ -1,3 +1,6 @@
+Version 1.2
+Used official icon graphic from FTV
+---------------
 Version 1.1
 Added disclaimer
 ---------------
