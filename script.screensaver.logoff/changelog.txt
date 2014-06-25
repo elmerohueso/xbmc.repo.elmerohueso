@@ -1,0 +1,5 @@
+Version 1.1
+Added sleep function for Android
+---------------
+Version 1.0
+Initial release
