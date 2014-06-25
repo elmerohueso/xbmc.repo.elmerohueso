@@ -1,7 +1,8 @@
 import xbmc
+import os
 
-class logoff(xbmc.Monitor):
-        xbmc.executebuiltin("System.Logoff()")
+# Logoff XBMC profile
+xbmc.executebuiltin("System.Logoff()")
 
-mylogoff = logoff()
-del mylogoff
+# Simulate Power button to sleep the device.  Do I want to check if the OS is Android, first?
+os.system("input keyevent 'KEYCODE_POWER'")
