@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="RUN ME FIRST!">
+		<setting label="Check SU Permissions" type="action" action="RunScript($CWD/resources/lib/runfirst.py)"/>
+    </category>
+	<category label="Settings">
+		<setting label="Power Option" type="enum" id="powerop" values="Put Device to Sleep|Power Off Device" default="0"/>
+        <setting label="Logoff XBMC Profile" id="logoffbool" type="bool" default="false" enable="eq(-1,0)"/>
+    </category>
+</settings>
