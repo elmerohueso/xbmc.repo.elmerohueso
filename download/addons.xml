@@ -36,6 +36,22 @@
   </extension>
 </addon>
 
+<addon id="script.program.KFTVlauncher"
+  name="FTV Launcher"
+  version="1.0"
+  provider-name="elmerohueso">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>android</platform>
+    <summary lang="en">Shortcut to the Amazon FireTV Launcher</summary>
+    <description lang="en">Launches the Amazon FireTV main launcher.  Can be added to the Home screen for quick access</description>
+  </extension>
+</addon>
+
 <addon id="script.program.rebootandroid"
   name="Reboot Android"
   version="1.0"
