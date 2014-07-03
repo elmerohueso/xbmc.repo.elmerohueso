@@ -1090,6 +1090,27 @@
 				<visible>IntegerGreaterThan(System.ProfileCount,1)</visible>
 				<visible>System.Loggedon</visible>
 			</control>
+			<control type="multiselect" id="13">
+      <description>My first multiselect control</description>
+      <posx>80</posx>
+      <posy>60</posy>
+      <width>250</width>
+      <height>200</height>
+      <visible>true</visible>
+      <texturefocus>myfocustexture.png</texturefocus>
+      <texturenofocus>mynormaltexture.png</texturenofocus>
+      <label>[ONCLICK Shutdown]Shutdown[/ONCLICK] or [ONCLICK Reboot]Reboot[/ONCLICK] XBMC</label>
+      <font>font12</font>
+      <textcolor>FFFFFFFF</textcolor>
+      <disabledcolor>80FFFFFF</disabledcolor>
+      <aligny>center</aligny>
+      <textoffsetx></textoffsetx>
+      <textoffsety></textoffsety>
+      <onup>2</onup>
+      <ondown>3</ondown>
+      <onleft>1</onleft>
+      <onright>1</onright>
+</control>
 			<!--<control type="button" id="21">
 				<description>Favourites push button</description>
 				<left>0</left>
