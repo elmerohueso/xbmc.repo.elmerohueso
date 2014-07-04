@@ -1,3 +1,9 @@
+Version 1.9
+Second attempt
+---------------
+Version 1.8
+Attempt to wake XBMC from screensaver with only 1 key press
+---------------
 Version 1.7
 Roll back to 1.3 code
 ---------------
