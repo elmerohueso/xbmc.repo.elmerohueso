@@ -20,10 +20,13 @@ def sleep():
 def poweroff():
 	os.system("su -c 'reboot -p'")
 
-if __logoff__ == "true":
-	logoff()
+if xbmc.getCondVisibility(!Player.HasAudio):
+	if __logoff__ == "true":
+		logoff()
 
-if __power__ == "0":
-	sleep()
-elif __power__ == "1":
-	poweroff()
+	if __power__ == "0":
+		sleep()
+	elif __power__ == "1":
+		poweroff()
+else:
+	xbmc.executebuiltin('noop')
