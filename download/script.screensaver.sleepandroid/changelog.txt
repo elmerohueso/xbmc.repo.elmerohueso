@@ -1,3 +1,6 @@
+Version 1.9
+Syntax errors and fix broken repo
+---------------
 Version 1.4
 Prevent screensaver from starting if music is playing
 ---------------

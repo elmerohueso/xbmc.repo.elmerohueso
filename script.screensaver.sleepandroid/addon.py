@@ -14,13 +14,11 @@ def sleep():
 	os.system("su -c 'echo 0 > /sys/devices/virtual/graphics/fb0/cec'")
 	os.system("su -c 'input keyevent KEYCODE_POWER'")
 	os.system("su -c 'echo 1 > /sys/devices/virtual/graphics/fb0/cec'")
-	if xbmc.getCondVisibility("System.ScreenSaverActive"):
-		xbmc.executebuiltin('ActivateWindow(%s)' % xbmcgui.getCurrentWindowId())
 	
 def poweroff():
 	os.system("su -c 'reboot -p'")
 
-if xbmc.getCondVisibility(!Player.HasAudio):
+if not xbmc.getCondVisibility("Player.HasAudio"):
 	if __logoff__ == "true":
 		logoff()
 
