@@ -1,3 +1,6 @@
+Version 2.5
+Made script break out of screensaver mode prior to sleeping, allowing for 1-button wake
+---------------
 Version 1.9
 Syntax errors and fix broken repo
 ---------------
