@@ -12,7 +12,6 @@ def logoff():
 	
 def sleep():
 	os.system("su -c 'echo 0 > /sys/devices/virtual/graphics/fb0/cec'")
-	os.system("su -c 'input keyevent KEYCODE_ENTER'")
 	os.system("su -c 'input keyevent KEYCODE_POWER'")
 	os.system("su -c 'echo 1 > /sys/devices/virtual/graphics/fb0/cec'")
 	
@@ -27,5 +26,3 @@ if not xbmc.getCondVisibility("Player.HasAudio"):
 		sleep()
 	elif __power__ == "1":
 		poweroff()
-else:
-	xbmc.executebuiltin('noop')
