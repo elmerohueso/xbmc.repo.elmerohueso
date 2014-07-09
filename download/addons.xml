@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
 <addon id="script.program.FTVhulu"
-  name="Hulu"
-  version="1.0"
+  name="Hulu Plus"
+  version="1.1"
   provider-name="elmerohueso">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -12,8 +12,8 @@
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>android</platform>
-    <summary lang="en">Hulu shortcut for Android</summary>
-    <description lang="en">Launches the Hulu app on the Android.  Can be added to the Home screen under the video categories for quick access.</description>
+    <summary lang="en">Hulu Plus shortcut for Android</summary>
+    <description lang="en">Launches the Hulu Plus app on the Android.  Can be added to the Home screen under the video categories for quick access.</description>
 	<disclaimer>Must already have the Hulu app installed.</disclaimer>
   </extension>
 </addon>
@@ -38,7 +38,7 @@
 
 <addon id="script.program.FTVpandora"
   name="Pandora"
-  version="1.1"
+  version="1.5"
   provider-name="elmerohueso">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>

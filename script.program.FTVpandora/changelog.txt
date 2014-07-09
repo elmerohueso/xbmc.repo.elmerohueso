@@ -1,4 +1,4 @@
-Version 1.2
+Version 1.5
 Display error if app doesn't exist 
 ---------------
 Version 1.1
