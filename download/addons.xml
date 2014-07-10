@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
+<addon id="script.program.FTVcrackle"
+  name="Crackle"
+  version="1.0"
+  provider-name="elmerohueso">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>android</platform>
+    <summary lang="en">Crackle shortcut for Android</summary>
+    <description lang="en">Launches the Crackle app on Android.  Can be added to the Home screen for quick access.</description>
+  </extension>
+</addon>
+
 <addon id="script.program.FTVhulu"
   name="Hulu Plus"
   version="1.1"
@@ -15,6 +31,22 @@
     <summary lang="en">Hulu Plus shortcut for Android</summary>
     <description lang="en">Launches the Hulu Plus app on the Android.  Can be added to the Home screen under the video categories for quick access.</description>
 	<disclaimer>Must already have the Hulu app installed.</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.program.FTVmormonchannel"
+  name="Mormon Channel"
+  version="1.0"
+  provider-name="elmerohueso">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>android</platform>
+    <summary lang="en">Mormon Channel shortcut for Android</summary>
+    <description lang="en">Launches the Mormon Channel app on Android.  Can be added to the Home screen for quick access.</description>
   </extension>
 </addon>
 
@@ -51,6 +83,38 @@
     <summary lang="en">Pandora shortcut for the Amazon FireTV</summary>
     <description lang="en">Launches the Pandora app on the Amazon FireTV.  Can be added to the Home screen for quick access</description>
 	<disclaimer>This only works with the Fire TV's version of Pandora.  It will not work with the general Android version.</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.program.FTVvevo"
+  name="Vevo"
+  version="1.0"
+  provider-name="elmerohueso">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>android</platform>
+    <summary lang="en">Vevo shortcut for Android</summary>
+    <description lang="en">Launches the Vevo app on Android.  Can be added to the Home screen for quick access.</description>
+  </extension>
+</addon>
+
+<addon id="script.program.FTVvimeo"
+  name="Vimeo"
+  version="1.0"
+  provider-name="elmerohueso">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>android</platform>
+    <summary lang="en">Vimeo shortcut for Android</summary>
+    <description lang="en">Launches the Vimeo app on Android.  Can be added to the Home screen for quick access.</description>
   </extension>
 </addon>
 
