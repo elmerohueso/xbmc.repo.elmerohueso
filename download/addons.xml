@@ -88,7 +88,7 @@
 
 <addon id="script.program.FTVvevo"
   name="Vevo"
-  version="1.0"
+  version="1.1"
   provider-name="elmerohueso">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -104,7 +104,7 @@
 
 <addon id="script.program.FTVvimeo"
   name="Vimeo"
-  version="1.0"
+  version="1.1"
   provider-name="elmerohueso">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>

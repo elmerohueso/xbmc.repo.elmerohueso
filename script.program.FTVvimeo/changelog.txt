@@ -1,2 +1,5 @@
+Version 1.1
+Updated icon
+---------------
 Version 1.0
 Initial release
