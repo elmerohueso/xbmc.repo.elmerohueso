@@ -1,5 +1,6 @@
 Version 1.1
-Display error if app doesn't exist 
+Display error if app doesn't exist
+Made it a program addon (can be placed anywhere)
 ---------------
 Version 1.0
 Initial release

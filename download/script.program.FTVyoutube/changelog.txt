@@ -1,3 +1,8 @@
+Version 1.1
+Cleaned code
+Added warning if app is not installed
+Made it a program addon (can be placed anywhere)
+---------------
 Version 1.0
 Initial release
 

@@ -7,7 +7,6 @@
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.script" library="addon.py">
-    <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>android</platform>

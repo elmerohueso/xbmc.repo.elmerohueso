@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="script.program.FTVnetflix"
   name="Netflix"
-  version="1.2" 
+  version="1.3" 
   provider-name="elmerohueso">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.script" library="addon.py">
-    <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>android</platform>
     <summary lang="en">Netflix shortcut for the Amazon FireTV</summary>
-    <description lang="en">Launches the Netflix app on the Amazon FireTV.  Can be added to the Home screen under the video categories for quick access</description>
+    <description lang="en">Launches the Netflix app on the Amazon FireTV.  Can be added to the Home screen under the video categories for quick access.</description>
 	<disclaimer>This only works with the Fire TV's version of Netflix.  It will not work with the general Android version.</disclaimer>
   </extension>
 </addon>
