@@ -957,15 +957,15 @@
 			<effect type="zoom" start="100" end="70" center="auto" easing="in" tween="quadratic" time="300"/>
 			<effect type="fade" start="100" end="0" time="300"/>
 		</animation>
-		<hitrect x="0" y="530" w="1280" h="120"/>
-		<left>0</left>
-		<top>190r</top>
-		<width>1280</width>
+		<hitrect x="0" y="530" w="1480" h="120"/>
+		<left>-180</left>
+		<top>205r</top>
+		<width>1480</width>
 		<height>200</height>
 		<pagecontrol>-</pagecontrol>
 		<scrolltime>300</scrolltime>
-		<focusposition>3</focusposition>
-		<movement>2</movement>
+		<focusposition>4</focusposition>
+		<movement>3</movement>
 		<orientation>Horizontal</orientation>
 		<itemlayout height="200" width="182">
 			<control type="image">

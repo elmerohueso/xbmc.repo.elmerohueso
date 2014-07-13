@@ -1,0 +1,6 @@
+Version 1.1
+Allowed up to 7 Home screen addon shortcuts for Videos, Music, Pictures, and Program categories (increased from 5)
+---------------
+Version 1.0
+Initial release
+

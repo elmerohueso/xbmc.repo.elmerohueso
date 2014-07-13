@@ -320,6 +320,20 @@
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(HomeVideosButton5))</visible>
 		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeVideosButton6))]</label>
+			<onclick>RunAddon($INFO[Skin.String(HomeVideosButton6)])</onclick>
+			<icon>$INFO[system.addonicon(Skin.String(HomeVideosButton6))]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(HomeVideosButton6))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeVideosButton7))]</label>
+			<onclick>RunAddon($INFO[Skin.String(HomeVideosButton7)])</onclick>
+			<icon>$INFO[system.addonicon(Skin.String(HomeVideosButton7))]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(HomeVideosButton7))</visible>
+		</item>
 	</include>
 	<include name="HomeAddonItemsMusic">
 		<item>
@@ -356,6 +370,20 @@
 			<icon>$INFO[system.addonicon(Skin.String(HomeMusicButton5))]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(HomeMusicButton5))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeMusicButton6))]</label>
+			<onclick>RunAddon($INFO[Skin.String(HomeMusicButton6)])</onclick>
+			<icon>$INFO[system.addonicon(Skin.String(HomeMusicButton6))]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(HomeMusicButton6))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeMusicButton7))]</label>
+			<onclick>RunAddon($INFO[Skin.String(HomeMusicButton7)])</onclick>
+			<icon>$INFO[system.addonicon(Skin.String(HomeMusicButton7))]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(HomeMusicButton7))</visible>
 		</item>
 	</include>
 	<include name="HomeAddonItemsPictures">
@@ -394,6 +422,20 @@
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(HomePictureButton5))</visible>
 		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomePictureButton6))]</label>
+			<onclick>RunAddon($INFO[Skin.String(HomePictureButton6)])</onclick>
+			<icon>$INFO[system.addonicon(Skin.String(HomePictureButton6))]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(HomePictureButton6))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomePictureButton7))]</label>
+			<onclick>RunAddon($INFO[Skin.String(HomePictureButton7)])</onclick>
+			<icon>$INFO[system.addonicon(Skin.String(HomePictureButton7))]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(HomePictureButton7))</visible>
+		</item>
 	</include>
 	<include name="HomeAddonItemsPrograms">
 		<item>
@@ -430,6 +472,20 @@
 			<icon>$INFO[system.addonicon(Skin.String(HomeProgramButton5))]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(HomeProgramButton5))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeProgramButton6))]</label>
+			<onclick>RunAddon($INFO[Skin.String(HomeProgramButton6)])</onclick>
+			<icon>$INFO[system.addonicon(Skin.String(HomeProgramButton6))]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(HomeProgramButton6))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeProgramButton7))]</label>
+			<onclick>RunAddon($INFO[Skin.String(HomeProgramButton7)])</onclick>
+			<icon>$INFO[system.addonicon(Skin.String(HomeProgramButton7))]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(HomeProgramButton7))</visible>
 		</item>
 	</include>
 </includes>

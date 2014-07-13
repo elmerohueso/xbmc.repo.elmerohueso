@@ -982,7 +982,7 @@
 			<onup>9001</onup>
 			<ondown>20</ondown>
 			<control type="fixedlist" id="700">
-				<animation effect="slide" start="0,0" end="-91,0" time="0" condition="StringCompare(Container(700).NumItems,2) | StringCompare(Container(700).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="-91,0" time="0" condition="StringCompare(Container(700).NumItems,2) | StringCompare(Container(700).NumItems,4 | StringCompare(Container(700).NumItems,6)">conditional</animation>
 				<visible>Container(9000).HasFocus(2) | Container(9000).HasFocus(10) | Container(9000).HasFocus(11)</visible>
 				<onleft>700</onleft>
 				<onright>700</onright>
@@ -994,7 +994,7 @@
 				</content>
 			</control>
 			<control type="fixedlist" id="703">
-				<animation effect="slide" start="0,0" end="-91,0" time="0" condition="StringCompare(Container(703).NumItems,2) | StringCompare(Container(703).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="-91,0" time="0" condition="StringCompare(Container(703).NumItems,2) | StringCompare(Container(703).NumItems,4 | StringCompare(Container(703).NumItems,6">conditional</animation>
 				<visible>Container(9000).HasFocus(3)</visible>
 				<onleft>703</onleft>
 				<onright>703</onright>
@@ -1006,7 +1006,7 @@
 				</content>
 			</control>
 			<control type="fixedlist" id="704">
-				<animation effect="slide" start="0,0" end="-91,0" time="0" condition="StringCompare(Container(704).NumItems,2) | StringCompare(Container(704).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="-91,0" time="0" condition="StringCompare(Container(704).NumItems,2) | StringCompare(Container(704).NumItems,4 | StringCompare(Container(704).NumItems,6)">conditional</animation>
 				<visible>Container(9000).HasFocus(4)</visible>
 				<onleft>704</onleft>
 				<onright>704</onright>
@@ -1018,7 +1018,7 @@
 				</content>
 			</control>
 			<control type="fixedlist" id="705">
-				<animation effect="slide" start="0,0" end="-91,0" time="0" condition="StringCompare(Container(705).NumItems,2) | StringCompare(Container(705).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="-91,0" time="0" condition="StringCompare(Container(705).NumItems,2) | StringCompare(Container(705).NumItems,4 | StringCompare(Container(705).NumItems,6)">conditional</animation>
 				<visible>Container(9000).HasFocus(1)</visible>
 				<onleft>705</onleft>
 				<onright>705</onright>
