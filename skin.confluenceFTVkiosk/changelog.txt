@@ -1,3 +1,6 @@
+Version 2.3
+Incremented version so it will update (APK incorrectly stated version was 2.2.16, the version number for official Confluence skin)
+---------------
 Version 1.1
 Allowed up to 7 Home screen addon shortcuts for Videos, Music, Pictures, and Program categories (increased from 5)
 ---------------
