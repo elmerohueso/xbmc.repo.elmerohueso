@@ -382,6 +382,19 @@
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
+					</control>					
+					<control type="radiobutton" id="90000">
+						<description>enable Favorites button</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>Show Favorites Button</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(ShowFavoritesButton)</onclick>
+						<selected>Skin.HasSetting(ShowFavoritesButton)</selected>
 					</control>
 					<control type="radiobutton" id="202">
 						<description>enable video info</description>

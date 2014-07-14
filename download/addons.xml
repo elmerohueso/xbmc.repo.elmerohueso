@@ -199,7 +199,7 @@
 
 <addon
   id="skin.confluenceFTVkiosk"
-  version="2.3"
+  version="2.4"
   name="Confluence (Fire TV Kiosk)"
   provider-name="Jezz_X, Team XBMC, modified by elmerohueso">
   <requires>

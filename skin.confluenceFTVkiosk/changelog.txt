@@ -1,3 +1,7 @@
+Version 2.4
+Added option to enable Favorites button (Home Window Options in Skin Settings)
+Swapped positions of Favorites and Power buttons
+---------------
 Version 2.3
 Incremented version so it will update (APK incorrectly stated version was 2.2.16, the version number for official Confluence skin)
 ---------------
