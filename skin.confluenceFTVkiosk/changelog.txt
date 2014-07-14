@@ -1,13 +1,18 @@
+Version 2.5
+Added option to toggle Power button (Home Window Options in Skin Settings, enabled is default)
+Added option for Power button to open the Shutdown menu or just Logoff (Logoff is default)
+Added Power button back to login dialog
+---------------
 Version 2.4
-Added option to enable Favorites button (Home Window Options in Skin Settings)
+Added option to toggle Favorites button (Home Window Options in Skin Settings, disabled is default)
 Swapped positions of Favorites and Power buttons
 ---------------
 Version 2.3
-Incremented version so it will update (APK incorrectly stated version was 2.2.16, the version number for official Confluence skin)
----------------
-Version 1.1
 Allowed up to 7 Home screen addon shortcuts for Videos, Music, Pictures, and Program categories (increased from 5)
 ---------------
-Version 1.0
-Initial release
-
+Version 2.2.16
+Based on default Confluence skin
+Removed Favorites button on Home screen (since it's directly accessible via the keymap)
+Removed "Exit" option on Home screen (since it's intended to run as the main launcher)
+Changed Power button action to Logoff profile
+Removed Power button from Login dialog

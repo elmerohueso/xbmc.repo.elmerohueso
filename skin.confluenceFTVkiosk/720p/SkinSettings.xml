@@ -383,6 +383,19 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>					
+					<control type="radiobutton" id="90001">
+						<description>enable Power button</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>Show Power Button</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(HidePowerButton)</onclick>
+						<selected>!Skin.HasSetting(HidePowerButton)</selected>
+					</control>
 					<control type="radiobutton" id="90000">
 						<description>enable Favorites button</description>
 						<width>750</width>
@@ -461,6 +474,46 @@
 						<selected>!Skin.HasSetting(HomepageHideRecentlyAddedAlbums)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+					<control type="label" id="90003">
+						<width>750</width>
+						<height>45</height>
+						<font>font13_title</font>
+						<label>Power Button Function</label>
+						<textcolor>blue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+					</control>										
+					<control type="radiobutton" id="90004">
+						<description>Power button shows shutdown menu</description>
+						<enable>!Skin.HasSetting(HidePowerButton)</enable>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>Show Shutdown Menu</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(1EnableShutdownMenu)</onclick>
+						<onclick>Skin.ToggleSetting(1PowerDoesntLogOff)</onclick>
+						<selected>Skin.HasSetting(1EnableShutdownMenu)</selected>
+					</control>
+					<control type="radiobutton" id="90005">
+						<description>Power button shows shutdown menu</description>
+						<enable>!Skin.HasSetting(HidePowerButton)</enable>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>Logoff XBMC Profile</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(1PowerDoesntLogOff)</onclick>
+						<onclick>Skin.ToggleSetting(1EnableShutdownMenu)</onclick>
+						<selected>!Skin.HasSetting(1PowerDoesntLogOff)</selected>
 					</control>
 					<control type="label" id="220">
 						<width>750</width>

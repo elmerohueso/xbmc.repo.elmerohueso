@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
   id="skin.confluenceFTVkiosk"
-  version="2.4"
+  version="2.5"
   name="Confluence (Fire TV Kiosk)"
   provider-name="Jezz_X, Team XBMC, modified by elmerohueso">
   <requires>

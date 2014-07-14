@@ -168,7 +168,7 @@
 				<aspectratio>keep</aspectratio>
 				<texture>Confluence_Logo.png</texture>
 			</control>
-			<!--<control type="group">
+			<control type="group">
 				<left>940</left>
 				<top>600</top>
 				<control type="label">
@@ -208,7 +208,7 @@
 					<aspectratio>keep</aspectratio>
 					<texture>icon_power.png</texture>
 				</control>
-			</control>-->
+			</control>
 		</control>
 		<include>Clock</include>
 		<control type="label">
