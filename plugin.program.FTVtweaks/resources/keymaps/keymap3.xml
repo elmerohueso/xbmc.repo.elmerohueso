@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keymap>
+  <Global>
+    <keyboard>
+      <up>Up</up>
+      <down>Down</down>
+      <left>Left</left>
+      <right>Right</right>
+      <enter>Select</enter>
+      <menu>ContextMenu</menu>
+      <play_pause>Play</play_pause>
+      <backspace>Back</backspace>
+      <rewind>PageUp</rewind>
+      <fastforward>PageDown</fastforward>
+    </keyboard>
+  </Global>
+  <Home>
+    <keyboard>
+      <menu>XBMC.ActivateWindow(favourites)</menu>
+    </keyboard>
+  </Home>
+  <FullscreenVideo>
+    <keyboard>
+      <up>ChapterOrBigStepForward</up>
+      <down>ChapterOrBigStepBack</down>
+      <left>StepBack</left>
+      <right>StepForward</right>
+      <return>OSD</return>
+      <menu>ShowSubtitles</menu>
+      <play_pause>Play</play_pause>
+      <backspace>Stop</backspace>
+      <rewind>Rewind</rewind>
+      <fastforward>FastForward</fastforward>
+    </keyboard>
+  </FullscreenVideo>
+</keymap>

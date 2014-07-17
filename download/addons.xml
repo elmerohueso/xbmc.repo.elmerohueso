@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
+<addon id="plugin.program.FTVtweaks"
+  name="XBMC tweaks for FTV"
+  version="1.0"
+  provider-name="elmerohueso">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>android</platform>
+    <summary lang="en">Tweaks for the Amazon FireTV</summary>
+    <description lang="en">A set of tweaks to improve your XBMC experience on the Amazon FireTV.</description>
+  </extension>
+</addon>
+
 <addon id="script.program.FTVcrackle"
   name="Crackle"
   version="1.0"

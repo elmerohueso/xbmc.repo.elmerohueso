@@ -1,0 +1,4 @@
+Version 1.0
+Initial release
+Allow toggling between keymaps recommended for the FTV
+Allow toggling between splashscreens recommended for the FTV

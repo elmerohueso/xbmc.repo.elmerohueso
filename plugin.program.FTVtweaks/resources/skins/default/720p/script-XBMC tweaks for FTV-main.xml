@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<backgroundcolor>0</backgroundcolor>
+	<defaultcontrol always="true">9000</defaultcontrol>
+	<controls>
+		<control type="group">
+			<left>90</left>
+			<top>30</top>
+			<!--Main content window-->
+			<control type="image">
+				<left>5</left>
+				<top>5</top>
+				<width>1090</width>
+				<height>630</height>
+				<texture>black.png</texture>
+			</control>
+			<!--Category list-->
+			<control type="list" id="9000">
+				<left>10</left>
+				<top>0</top>
+				<width>260</width>
+				<height>481</height>
+				<onleft>9010</onleft>
+				<onright>9010</onright>
+				<onup>9000</onup>
+				<ondown>9000</ondown>
+				<pagecontrol>-</pagecontrol>
+				<scrolltime>300</scrolltime>
+				<!--Define category layout, unfocused-->
+				<itemlayout height="80" width="260">
+					<control type="label">
+						<left>250</left>
+						<top>15</top>
+						<width>380</width>
+						<height>25</height>
+						<font>font24_title</font>
+						<textcolor>grey3</textcolor>
+						<align>right</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+				</itemlayout>
+				<!--Define category layout, focused-->
+				<focusedlayout height="80" width="260">
+					<!--Blue overlay-->
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>260</width>
+						<height>81</height>
+						<texture border="5">MenuItemFO.png</texture>
+						<animation effect="fade" start="100" end="30" time="100" condition="!Control.HasFocus(9000)">Conditional</animation>
+					</control>
+					<control type="label">
+						<left>250</left>
+						<top>15</top>
+						<width>380</width>
+						<height>25</height>
+						<font>font24_title</font>
+						<textcolor>white</textcolor>
+						<align>right</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+				</focusedlayout>
+				<!--Define category titles-->
+				<content>
+					<item id="1">
+						<label>Keymap Tweaks</label>
+						<onclick>noop</onclick>
+					</item>
+					<item id="2">
+						<label>Splashscreen Tweaks</label>
+						<onclick>noop</onclick>
+					</item>
+					<item id="3">
+						<label>Other</label>
+						<onclick>noop</onclick>
+					</item>
+				</content>
+			</control>
+			<!--Content panel background-->
+			<control type="image">
+				<left>268</left>
+				<top>10</top>
+				<width>820</width>
+				<height>618</height>
+				<texture border="5">black-back2.png</texture>
+			</control>
+			<!--Category 1-->
+			<control type="group" id="9010">
+				<control type="grouplist" id="9001">
+					<visible>Container(9000).Hasfocus(1)</visible>
+					<left>290</left>
+					<top>0</top>
+					<width>750</width>
+					<height>530</height>
+					<itemgap>-1</itemgap>
+					<orientation>vertical</orientation>
+					<onleft>9000</onleft>
+					<control type="label" id="100">
+						<width>750</width>
+						<height>45</height>
+						<font>font13_title</font>
+						<label>Choose a Keymap</label>
+						<textcolor>blue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+					</control>
+					<control type="grouplist" id="9002">
+						<visible>Container(9000).Hasfocus(1)</visible>
+						<left>290</left>
+						<top>0</top>
+						<width>750</width>
+						<height>40</height>
+						<itemgap>25</itemgap>
+						<orientation>horizontal</orientation>
+						<control type="radiobutton" id="101">
+							<width>150</width>
+							<height>40</height>
+							<font>font13</font>
+							<align>center</align>
+							<label>Default</label>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus>MenuItemFO.png</texturefocus>
+							<texturenofocus>MenuItemNF.png</texturenofocus>
+							<onclick>XBMC.RunScript(special://home/addons/plugin.program.FTVtweaks/resources/lib/copykeymap.py, default)</onclick>
+							<onclick condition="!Skin.HasSetting(hasdefaultkeymap)">Skin.ToggleSetting(hasdefaultkeymap)</onclick>
+							<onclick condition="Skin.HasSetting(haskeymap1)">Skin.ToggleSetting(haskeymap1)</onclick>
+							<onclick condition="Skin.HasSetting(haskeymap2)">Skin.ToggleSetting(haskeymap2)</onclick>
+							<onclick condition="Skin.HasSetting(haskeymap3)">Skin.ToggleSetting(haskeymap3)</onclick>
+							<selected>Skin.HasSetting(hasdefaultkeymap)</selected>
+						</control>
+						<control type="radiobutton" id="102">
+							<width>150</width>
+							<height>40</height>
+							<font>font13</font>
+							<align>center</align>
+							<label>Keymap 1</label>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus>MenuItemFO.png</texturefocus>
+							<texturenofocus>MenuItemNF.png</texturenofocus>
+							<onclick>XBMC.RunScript(special://home/addons/plugin.program.FTVtweaks/resources/lib/copykeymap.py, 1)</onclick>
+							<onclick condition="!Skin.HasSetting(haskeymap1)">Skin.ToggleSetting(haskeymap1)</onclick>
+							<onclick condition="Skin.HasSetting(hasdefaultkeymap)">Skin.ToggleSetting(hasdefaultkeymap)</onclick>
+							<onclick condition="Skin.HasSetting(haskeymap2)">Skin.ToggleSetting(haskeymap2)</onclick>
+							<onclick condition="Skin.HasSetting(haskeymap3)">Skin.ToggleSetting(haskeymap3)</onclick>
+							<selected>Skin.HasSetting(haskeymap1)</selected>
+						</control>
+						<control type="radiobutton" id="103">
+							<width>150</width>
+							<height>40</height>
+							<font>font13</font>
+							<align>center</align>
+							<label>Keymap 2</label>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus>MenuItemFO.png</texturefocus>
+							<texturenofocus>MenuItemNF.png</texturenofocus>
+							<onclick>XBMC.RunScript(special://home/addons/plugin.program.FTVtweaks/resources/lib/copykeymap.py, 2)</onclick>
+							<onclick condition="!Skin.HasSetting(haskeymap2)">Skin.ToggleSetting(haskeymap2)</onclick>
+							<onclick condition="Skin.HasSetting(haskeymap1)">Skin.ToggleSetting(haskeymap1)</onclick>
+							<onclick condition="Skin.HasSetting(hasdefaultkeymap)">Skin.ToggleSetting(hasdefaultkeymap)</onclick>
+							<onclick condition="Skin.HasSetting(haskeymap3)">Skin.ToggleSetting(haskeymap3)</onclick>
+							<selected>Skin.HasSetting(haskeymap2)</selected>
+						</control>
+						<control type="radiobutton" id="104">
+							<width>150</width>
+							<height>40</height>
+							<font>font13</font>
+							<align>center</align>
+							<label>Keymap 3</label>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus>MenuItemFO.png</texturefocus>
+							<texturenofocus>MenuItemNF.png</texturenofocus>
+							<onclick>XBMC.RunScript(special://home/addons/plugin.program.FTVtweaks/resources/lib/copykeymap.py, 3)</onclick>
+							<onclick condition="!Skin.HasSetting(haskeymap3)">Skin.ToggleSetting(haskeymap3)</onclick>
+							<onclick condition="Skin.HasSetting(haskeymap1)">Skin.ToggleSetting(haskeymap1)</onclick>
+							<onclick condition="Skin.HasSetting(haskeymap2)">Skin.ToggleSetting(haskeymap2)</onclick>
+							<onclick condition="Skin.HasSetting(hasdefaultkeymap)">Skin.ToggleSetting(hasdefaultkeymap)</onclick>
+							<selected>Skin.HasSetting(haskeymap3)</selected>
+						</control>
+					</control>
+					<control type="image">
+						<visible allowhiddenfocus="true">Control.HasFocus(101)</visible>
+						<height>450</height>
+						<texture>defaultkeys.png</texture>
+					</control>
+					<control type="image">
+						<visible allowhiddenfocus="true">Control.HasFocus(102)</visible>
+						<height>450</height>
+						<texture>keys1.png</texture>
+					</control>
+					<control type="image">
+						<visible allowhiddenfocus="true">Control.HasFocus(103)</visible>
+						<height>450</height>
+						<texture>keys2.png</texture>
+					</control>
+					<control type="image">
+						<visible allowhiddenfocus="true">Control.HasFocus(104)</visible>
+						<height>450</height>
+						<texture>keys3.png</texture>
+					</control>
+				</control>
+				<!--Category 2-->
+				<control type="grouplist" id="9003">
+					<visible>Container(9000).Hasfocus(2)</visible>
+					<left>290</left>
+					<top>0</top>
+					<width>750</width>
+					<height>530</height>
+					<itemgap>-1</itemgap>
+					<onleft>9000</onleft>
+					<control type="label" id="200">
+						<width>750</width>
+						<height>45</height>
+						<font>font13_title</font>
+						<label>Pick a Splashscreen</label>
+						<textcolor>blue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+					</control>	
+					<control type="grouplist" id="9004">
+						<visible>Container(9000).Hasfocus(2)</visible>
+						<left>290</left>
+						<top>60</top>
+						<width>750</width>
+						<height>40</height>
+						<itemgap>-1</itemgap>
+						<orientation>horizontal</orientation>
+						<control type="radiobutton" id="201">
+							<width>150</width>
+							<height>40</height>
+							<font>font13</font>
+							<align>center</align>
+							<label>Default</label>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus>MenuItemFO.png</texturefocus>
+							<texturenofocus>MenuItemNF.png</texturenofocus>
+							<onclick>XBMC.RunScript(special://home/addons/plugin.program.FTVtweaks/resources/lib/copysplash.py, default)</onclick>
+							<onclick condition="!Skin.HasSetting(hasdefaultsplashscreen)">Skin.ToggleSetting(hasdefaultsplashscreen)</onclick>
+							<onclick condition="Skin.HasSetting(hassplashscreen1)">Skin.ToggleSetting(hassplashscreen1)</onclick>
+							<onclick condition="Skin.HasSetting(hassplashscreen2)">Skin.ToggleSetting(hassplashscreen2)</onclick>
+							<onclick condition="Skin.HasSetting(hassplashscreen3)">Skin.ToggleSetting(hassplashscreen3)</onclick>
+							<selected>Skin.HasSetting(hasdefaultsplashscreen)</selected>
+						</control>
+						<control type="radiobutton" id="202">
+							<width>200</width>
+							<height>40</height>
+							<font>font13</font>
+							<align>center</align>
+							<label>Splashscreen 1</label>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus>MenuItemFO.png</texturefocus>
+							<texturenofocus>MenuItemNF.png</texturenofocus>
+							<onclick>XBMC.RunScript(special://home/addons/plugin.program.FTVtweaks/resources/lib/copysplash.py, 1)</onclick>
+							<onclick condition="!Skin.HasSetting(hassplashscreen1)">Skin.ToggleSetting(hassplashscreen1)</onclick>
+							<onclick condition="Skin.HasSetting(hasdefaultsplashscreen)">Skin.ToggleSetting(hasdefaultsplashscreen)</onclick>
+							<onclick condition="Skin.HasSetting(hassplashscreen2)">Skin.ToggleSetting(hassplashscreen2)</onclick>
+							<onclick condition="Skin.HasSetting(hassplashscreen3)">Skin.ToggleSetting(hassplashscreen3)</onclick>
+							<selected>Skin.HasSetting(hassplashscreen1)</selected>
+						</control>
+						<control type="radiobutton" id="203">
+							<width>200</width>
+							<height>40</height>
+							<font>font13</font>
+							<align>center</align>
+							<label>Splashscreen 2</label>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus>MenuItemFO.png</texturefocus>
+							<texturenofocus>MenuItemNF.png</texturenofocus>
+							<onclick>XBMC.RunScript(special://home/addons/plugin.program.FTVtweaks/resources/lib/copysplash.py, 2)</onclick>
+							<onclick condition="!Skin.HasSetting(hassplashscreen2)">Skin.ToggleSetting(hassplashscreen2)</onclick>
+							<onclick condition="Skin.HasSetting(hassplashscreen1)">Skin.ToggleSetting(hassplashscreen1)</onclick>
+							<onclick condition="Skin.HasSetting(hasdefaultsplashscreen)">Skin.ToggleSetting(hasdefaultsplashscreen)</onclick>
+							<onclick condition="Skin.HasSetting(hassplashscreen3)">Skin.ToggleSetting(hassplashscreen3)</onclick>
+							<selected>Skin.HasSetting(hassplashscreen2)</selected>
+						</control>
+						<control type="radiobutton" id="204">
+							<width>200</width>
+							<height>40</height>
+							<font>font13</font>
+							<align>center</align>
+							<label>Splashscreen 3</label>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus>MenuItemFO.png</texturefocus>
+							<texturenofocus>MenuItemNF.png</texturenofocus>
+							<onclick>XBMC.RunScript(special://home/addons/plugin.program.FTVtweaks/resources/lib/copysplash.py, 3)</onclick>
+							<onclick condition="!Skin.HasSetting(hassplashscreen3)">Skin.ToggleSetting(hassplashscreen3)</onclick>
+							<onclick condition="Skin.HasSetting(hassplashscreen1)">Skin.ToggleSetting(hassplashscreen1)</onclick>
+							<onclick condition="Skin.HasSetting(hassplashscreen2)">Skin.ToggleSetting(hassplashscreen2)</onclick>
+							<onclick condition="Skin.HasSetting(hasdefaultsplashscreen)">Skin.ToggleSetting(hasdefaultsplashscreen)</onclick>
+							<selected>Skin.HasSetting(hassplashscreen3)</selected>
+						</control>
+					</control>	
+					<control type="image">
+						<visible allowhiddenfocus="true">Control.HasFocus(202)</visible>
+						<height>450</height>
+						<texture>splash1.png</texture>
+					</control>
+					<control type="image">
+						<visible allowhiddenfocus="true">Control.HasFocus(203)</visible>
+						<height>450</height>
+						<texture>splash2.png</texture>
+					</control>
+					<control type="image">
+						<visible allowhiddenfocus="true">Control.HasFocus(204)</visible>
+						<height>450</height>
+						<texture>splash3.png</texture>
+					</control>
+				</control>
+				<!--Category 3
+				<control type="grouplist" id="9003">
+					<visible>Container(9000).Hasfocus(3)</visible>
+					<left>290</left>
+					<top>0</top>
+					<width>750</width>
+					<height>530</height>
+					<itemgap>-1</itemgap>
+					<onleft>9000</onleft>
+					<control type="label" id="300">
+						<width>750</width>
+						<height>45</height>
+						<font>font13_title</font>
+						<label>Click an addon to install it</label>
+						<textcolor>blue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+					</control>
+					<control type="button" id="301">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>"Confluence (Fire TV Kiosk)" skin</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(HideBackGroundFanart)</onclick>
+					</control>
+					<control type="button" id="302">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>"Android Power Options" screensaver</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(HideVisualizationFanart)</onclick>
+					</control>
+				</control>-->
+				<!--Category 4-->
+				<control type="group">
+					<control type="grouplist" id="9004">
+						<visible>Container(9000).Hasfocus(3)</visible>
+						<left>290</left>
+						<top>0</top>
+						<width>750</width>
+						<height>530</height>
+						<itemgap>-1</itemgap>
+						<onleft>9000</onleft>
+						<control type="label" id="400">
+							<width>750</width>
+							<height>45</height>
+							<font>font13_title</font>
+							<label>Other Recommendations</label>
+							<textcolor>blue</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+						</control>
+						<control type="textbox" id="401">
+							<width>750</width>
+							<height>80</height>
+							<font>font13</font>
+							<label>Remember to set "Remote control sends keyboard presses" under [COLOR red]System > Settings > System > Input devices[/COLOR] in order to use the on-screen keyboard.</label>
+							<textcolor>white</textcolor>
+						</control>						
+					</control>
+				</control>
+			</control>
+		</control>
+	</controls>
+</window>
