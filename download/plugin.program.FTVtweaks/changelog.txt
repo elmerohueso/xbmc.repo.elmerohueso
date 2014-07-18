@@ -1,3 +1,8 @@
+Version 1.2
+Changed to toggle buttons instead of radiobuttons
+Added link to System Settings under Other
+Cleaned up graphics
+---------------
 Version 1.1
 Changed to use xbmcvfs library for file operations
 ---------------

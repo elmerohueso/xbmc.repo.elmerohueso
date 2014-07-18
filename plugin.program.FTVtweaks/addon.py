@@ -8,6 +8,6 @@ __addonname__ = __addon__.getAddonInfo('name')
 __icon__ = __addon__.getAddonInfo('icon')
 __path__ = __addon__.getAddonInfo('path')
 
-mygui = xbmcgui.WindowXMLDialog('script-%s-main.xml' % __addonname__, __path__)
+mygui = xbmcgui.WindowXML('script-%s-main.xml' % __addonname__, __path__)
 mygui.doModal()
 del mygui
