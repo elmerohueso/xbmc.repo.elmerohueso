@@ -1,3 +1,6 @@
+Version 1.3
+Clear aread around window to get rid of graphic glitches
+---------------
 Version 1.2
 Changed to toggle buttons instead of radiobuttons
 Added link to System Settings under Other
