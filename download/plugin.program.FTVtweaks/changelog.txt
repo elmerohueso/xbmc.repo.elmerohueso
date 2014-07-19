@@ -1,3 +1,6 @@
+Version 1.6
+Small layout fixes
+---------------
 Version 1.5
 Made dialog full screen to easily read keymaps
 ---------------
