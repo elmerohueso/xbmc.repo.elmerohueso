@@ -1,5 +1,8 @@
+Version 1.5
+Made dialog full screen to easily read keymaps
+---------------
 Version 1.3
-Clear aread around window to get rid of graphic glitches
+Clear area around window to get rid of graphic glitches
 ---------------
 Version 1.2
 Changed to toggle buttons instead of radiobuttons

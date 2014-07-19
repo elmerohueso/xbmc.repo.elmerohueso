@@ -1,16 +1,15 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <window>
+	<backgroundcolor>0xff0000ff</backgroundcolor>
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<controls>
 		<control type="group">
-			<left>90</left>
-			<top>30</top>
+			<left>0</left>
+			<top>0</top>
 			<!--Main content window-->
 			<control type="image">
-				<left>5</left>
-				<top>5</top>
-				<width>1090</width>
-				<height>630</height>
+				<width>1280</width>
+				<height>720</height>
 				<texture>black.png</texture>
 			</control>
 			<!--Category list-->
@@ -18,7 +17,7 @@
 				<left>10</left>
 				<top>0</top>
 				<width>260</width>
-				<height>630</height>
+				<height>720</height>
 				<onleft>9010</onleft>
 				<onright>9010</onright>
 				<onup>9000</onup>
@@ -82,8 +81,8 @@
 			<control type="image">
 				<left>268</left>
 				<top>10</top>
-				<width>820</width>
-				<height>620</height>
+				<width>1005</width>
+				<height>700</height>
 				<texture border="5">black-back2.png</texture>
 			</control>
 			<!--Category 1-->
@@ -92,13 +91,13 @@
 					<visible>Container(9000).Hasfocus(1)</visible>
 					<left>290</left>
 					<top>0</top>
-					<width>750</width>
-					<height>620</height>
+					<width>1005</width>
+					<height>700</height>
 					<itemgap>-1</itemgap>
 					<orientation>vertical</orientation>
 					<onleft>9000</onleft>
 					<control type="label" id="100">
-						<width>750</width>
+						<width>1005</width>
 						<height>45</height>
 						<font>font13_title</font>
 						<label>Choose a Keymap</label>
@@ -111,7 +110,7 @@
 						<visible>Container(9000).Hasfocus(1)</visible>
 						<left>290</left>
 						<top>0</top>
-						<width>750</width>
+						<width>1005</width>
 						<height>40</height>
 						<itemgap>25</itemgap>
 						<orientation>horizontal</orientation>
@@ -197,22 +196,26 @@
 					</control>
 					<control type="image">
 						<visible allowhiddenfocus="true">Control.HasFocus(101)</visible>
-						<height>520</height>
+						<height>610</height>
+						<width>970</width>
 						<texture>defaultkeys.png</texture>
 					</control>
 					<control type="image">
 						<visible allowhiddenfocus="true">Control.HasFocus(102)</visible>
-						<height>520</height>
+						<height>610</height>
+						<width>970</width>
 						<texture>keys1.png</texture>
 					</control>
 					<control type="image">
 						<visible allowhiddenfocus="true">Control.HasFocus(103)</visible>
-						<height>520</height>
+						<height>610</height>
+						<width>970</width>
 						<texture>keys2.png</texture>
 					</control>
 					<control type="image">
 						<visible allowhiddenfocus="true">Control.HasFocus(104)</visible>
-						<height>520</height>
+						<height>610</height>
+						<width>970</width>
 						<texture>keys3.png</texture>
 					</control>
 				</control>
@@ -221,12 +224,12 @@
 					<visible>Container(9000).Hasfocus(2)</visible>
 					<left>290</left>
 					<top>0</top>
-					<width>750</width>
-					<height>530</height>
+					<width>1005</width>
+					<height>700</height>
 					<itemgap>-1</itemgap>
 					<onleft>9000</onleft>
 					<control type="label" id="200">
-						<width>750</width>
+						<width>1005</width>
 						<height>45</height>
 						<font>font13_title</font>
 						<label>Pick a Splashscreen</label>
@@ -239,9 +242,9 @@
 						<visible>Container(9000).Hasfocus(2)</visible>
 						<left>290</left>
 						<top>60</top>
-						<width>750</width>
+						<width>1005</width>
 						<height>40</height>
-						<itemgap>-1</itemgap>
+						<itemgap>25</itemgap>
 						<orientation>horizontal</orientation>
 						<control type="togglebutton" id="201">
 							<width>150</width>
@@ -325,17 +328,20 @@
 					</control>	
 					<control type="image">
 						<visible allowhiddenfocus="true">Control.HasFocus(202)</visible>
-						<height>520</height>
+						<height>545</height>
+						<width>970</width>
 						<texture>splash1.png</texture>
 					</control>
 					<control type="image">
 						<visible allowhiddenfocus="true">Control.HasFocus(203)</visible>
-						<height>520</height>
+						<height>545</height>
+						<width>970</width>
 						<texture>splash2.png</texture>
 					</control>
 					<control type="image">
 						<visible allowhiddenfocus="true">Control.HasFocus(204)</visible>
-						<height>520</height>
+						<height>545</height>
+						<width>970</width>
 						<texture>splash3.png</texture>
 					</control>
 				</control>
@@ -345,12 +351,12 @@
 						<visible>Container(9000).Hasfocus(3)</visible>
 						<left>290</left>
 						<top>0</top>
-						<width>750</width>
-						<height>530</height>
+						<width>1005</width>
+						<height>700</height>
 						<itemgap>-1</itemgap>
 						<onleft>9000</onleft>
 						<control type="label" id="400">
-							<width>750</width>
+							<width>1005</width>
 							<height>45</height>
 							<font>font13_title</font>
 							<label>Other Recommendations</label>
@@ -360,7 +366,7 @@
 							<aligny>center</aligny>
 						</control>
 						<control type="textbox" id="401">
-							<width>750</width>
+							<width>1005</width>
 							<height>80</height>
 							<font>font13</font>
 							<label>You've already set "Remote control sends keyboard presses", so you're good to go.</label>
@@ -368,7 +374,7 @@
 							<textcolor>white</textcolor>
 						</control>
 						<control type="textbox" id="401">
-							<width>750</width>
+							<width>1005</width>
 							<height>80</height>
 							<font>font13</font>
 							<label>Click the button below and set "Remote control sends keyboard presses" under [COLOR red]Input devices[/COLOR] in order to use the on-screen keyboard.</label>
@@ -376,7 +382,7 @@
 							<textcolor>white</textcolor>
 						</control>
 						<control type="button" id="402">
-							<width>750</width>
+							<width>1005</width>
 							<height>40</height>
 							<font>font13</font>
 							<label>Open "System Settings"</label>
