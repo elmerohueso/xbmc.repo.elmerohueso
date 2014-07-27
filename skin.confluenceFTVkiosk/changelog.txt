@@ -1,3 +1,8 @@
+Version 2.8
+Changed skin name to Confluence++ (skin is not device-specific)
+Added ability to shutdown, reboot, and suspend ROOTED Android devices from the Shutdown Menu
+Added check for root access on Android devices (General Settings in Skin Settings)
+---------------
 Version 2.5
 Added option to toggle Power button (Home Window Options in Skin Settings, enabled is default)
 Added option for Power button to open the Shutdown menu or just Logoff (Logoff is default)

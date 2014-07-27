@@ -97,8 +97,9 @@
 				<textwidth>290</textwidth>
 				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
 				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
-				<onclick>XBMC.Powerdown()</onclick>
-				<visible>System.CanPowerDown</visible>
+				<onclick condition="!System.Platform.Android">XBMC.Powerdown()</onclick>
+				<onclick condition="System.Platform.Android">XBMC.RunScript(special://skin/resources/lib/androidpower.py, shutdown)</onclick>
+				<visible>System.CanPowerDown | [System.Platform.Android + Skin.HasSetting(HasRoot)]</visible>
 				<pulseonselect>no</pulseonselect>
 				<font>font13</font>
 				<label>13016</label>
@@ -146,8 +147,9 @@
 				<textwidth>290</textwidth>
 				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
 				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
-				<onclick>XBMC.Suspend()</onclick>
-				<visible>System.CanSuspend</visible>
+				<onclick condition="!System.Platform.Android">XBMC.Suspend()</onclick>
+				<onclick condition="System.Platform.Android">XBMC.RunScript(special://skin/resources/lib/androidpower.py, sleep)</onclick>
+				<visible>System.CanSuspend | [System.Platform.Android + Skin.HasSetting(HasRoot)]</visible>
 				<pulseonselect>no</pulseonselect>
 				<font>font13</font>
 				<label>13011</label>
@@ -178,8 +180,9 @@
 				<textwidth>290</textwidth>
 				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
 				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
-				<onclick>XBMC.Reset()</onclick>
-				<visible>System.CanReboot</visible>
+				<onclick condition="!System.Platform.Android">XBMC.Reset()</onclick>
+				<onclick condition="System.Platform.Android">XBMC.RunScript(special://skin/resources/lib/androidpower.py, reboot)</onclick>
+				<visible>System.CanReboot | [System.Platform.Android + Skin.HasSetting(HasRoot)]</visible>
 				<pulseonselect>no</pulseonselect>
 				<font>font13</font>
 				<label>13013</label>

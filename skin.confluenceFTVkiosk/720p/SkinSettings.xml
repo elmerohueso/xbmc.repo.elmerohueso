@@ -344,6 +344,29 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>Skin.HasSetting(Use_Startup_Playlist)</enable>
 					</control>
+					<control type="label" id="109">
+						<width>750</width>
+						<height>45</height>
+						<font>font13_title</font>
+						<label>Android Options</label>
+						<textcolor>blue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<visible>System.Platform.Android</visible>
+					</control>
+					<control type="button" id="110">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>Check SU Permissions</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>XBMC.RunScript(special://skin/resources/lib/checksu.py)</onclick>
+						<visible>System.Platform.Android</visible>
+					</control>
 				</control>
 				<control type="scrollbar" id="60">
 					<left>1060</left>
