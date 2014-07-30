@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window type="dialog" id="2119">
+	<defaultcontrol always="true">450</defaultcontrol>
+	<coordinates>
+		<system>1</system>
+		<posx>0</posx>
+		<posy>0</posy>
+	</coordinates>
+	<controls>
+		<control type="group">
+			<animation effect="slide" start="400,0" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
+			<animation effect="slide" start="0,0" end="400,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
+			<control type="image">
+				<posx>400r</posx>
+				<posy>0</posy>
+				<width>400</width>
+				<height>720</height>
+				<texture border="15">ContentPanel.png</texture>
+			</control>
+			<control type="button">
+				<description>Close Window button</description>
+				<posx>380r</posx>
+				<posy>0</posy>
+				<width>64</width>
+				<height>32</height>
+				<label>-</label>
+				<font>-</font>
+				<onclick>PreviousMenu</onclick>
+				<texturefocus>DialogCloseButton-focus.png</texturefocus>
+				<texturenofocus>DialogCloseButton.png</texturenofocus>
+				<onleft>450</onleft>
+				<onright>450</onright>
+				<onup>450</onup>
+				<ondown>450</ondown>
+				<visible>system.getbool(input.enablemouse)</visible>
+			</control>
+			<control type="label">
+				<posx>380r</posx>
+				<posy>35</posy>
+				<width>360</width>
+				<height>40</height>
+				<font>font13_title</font>
+				<align>center</align>
+				<aligny>center</aligny>
+				<textcolor>blue</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<label>Shortcut Options</label>
+			</control>
+			<control type="list" id="450">
+				<posx>390r</posx>
+				<posy>130</posy>
+				<width>440</width>
+				<height>480</height>
+				<onup>450</onup>
+				<onleft>-</onleft>
+				<onright>60</onright>
+				<ondown>450</ondown>
+				<pagecontrol>60</pagecontrol>
+				<scrolltime>200</scrolltime>
+				<itemlayout height="40">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>360</width>
+						<height>40</height>
+						<texture>MenuItemNF.png</texture>
+					</control>
+					<control type="label">
+						<posx>10</posx>
+						<posy>0</posy>
+						<width>340</width>
+						<height>40</height>
+						<font>font12_title</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>grey2</textcolor>
+						<info>ListItem.Label</info>
+					</control>
+				</itemlayout>
+				<focusedlayout height="40">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>360</width>
+						<height>40</height>
+						<visible>!Control.HasFocus(450)</visible>
+						<texture>MenuItemNF.png</texture>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>360</width>
+						<height>40</height>
+						<visible>Control.HasFocus(450)</visible>
+						<texture>MenuItemFO.png</texture>
+					</control>
+					<control type="label">
+						<posx>10</posx>
+						<posy>0</posy>
+						<width>340</width>
+						<height>40</height>
+						<font>font12_title</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>white</textcolor>
+						<info>ListItem.Label</info>
+					</control>
+				</focusedlayout>
+				<content>
+					<item>
+						<label>[B]Delete Shortcut[/B]</label>
+						<onclick>Dialog.Close(2119)</onclick>
+						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)].Label)</onclick>
+						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)].Path)</onclick>
+						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)].Icon)</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+					</item>
+					<item>
+						<label>Favorites</label>
+						<onclick>Dialog.Close(2119)</onclick>
+						<onclick>RunScript(script.favourites,changetitle=false&amp;property=$INFO[Window(home).Property(UsrSelectBtn)])</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+						<visible>System.HasAddon(script.favourites)</visible>
+					</item>
+					<item>
+						<label>Video Add-ons</label>
+						<onclick>Dialog.Close(2119)</onclick>
+						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)].Label)</onclick>
+						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)].Path)</onclick>
+						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)].Icon)</onclick>
+						<onclick>Skin.SetAddon(UsrSelectAddon,xbmc.addon.video)</onclick>
+						<onclick condition="!IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Label,$INFO[system.addontitle(Skin.String(UsrSelectAddon))])</onclick>
+						<onclick condition="!IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Path,RunAddon($INFO[Skin.String(UsrSelectAddon)]))</onclick>
+						<onclick condition="!IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Icon,$INFO[system.addonicon(Skin.String(UsrSelectAddon))])</onclick>
+					</item>
+					<item>
+						<label>Music Add-ons</label>
+						<onclick>Dialog.Close(2119)</onclick>
+						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)].Label)</onclick>
+						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)].Path)</onclick>
+						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)].Icon)</onclick>
+						<onclick>Skin.SetAddon(UsrSelectAddon,xbmc.addon.audio)</onclick>
+						<onclick condition="!IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Label,$INFO[system.addontitle(Skin.String(UsrSelectAddon))])</onclick>
+						<onclick condition="!IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Path,RunAddon($INFO[Skin.String(UsrSelectAddon)]))</onclick>
+						<onclick condition="!IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Icon,$INFO[system.addonicon(Skin.String(UsrSelectAddon))])</onclick>
+					</item>
+					<item>
+						<label>Picture Add-ons</label>
+						<onclick>Dialog.Close(2119)</onclick>
+						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)].Label)</onclick>
+						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)].Path)</onclick>
+						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)].Icon)</onclick>
+						<onclick>Skin.SetAddon(UsrSelectAddon,xbmc.addon.image)</onclick>
+						<onclick condition="!IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Label,$INFO[system.addontitle(Skin.String(UsrSelectAddon))])</onclick>
+						<onclick condition="!IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Path,RunAddon($INFO[Skin.String(UsrSelectAddon)]))</onclick>
+						<onclick condition="!IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Icon,$INFO[system.addonicon(Skin.String(UsrSelectAddon))])</onclick>
+					</item>
+					<item>
+						<label>Program Add-ons</label>
+						<onclick>Dialog.Close(2119)</onclick>
+						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)].Label)</onclick>
+						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)].Path)</onclick>
+						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)].Icon)</onclick>
+						<onclick>Skin.SetAddon(UsrSelectAddon,xbmc.addon.executable)</onclick>
+						<onclick condition="!IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Label,$INFO[system.addontitle(Skin.String(UsrSelectAddon))])</onclick>
+						<onclick condition="!IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Path,RunAddon($INFO[Skin.String(UsrSelectAddon)]))</onclick>
+						<onclick condition="!IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Icon,$INFO[system.addonicon(Skin.String(UsrSelectAddon))])</onclick>
+					</item>
+				</content>
+			</control>
+		</control>
+	</controls>
+</window>

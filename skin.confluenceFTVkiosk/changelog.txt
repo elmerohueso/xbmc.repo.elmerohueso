@@ -1,3 +1,7 @@
+Version 2.9
+Added "FireTV" color theme (textures and background by freakylinuxguy, https://github.com/freakylinuxguy)
+Added ability to set any addon or favorite as a Home screen addon shortcut (previously created shortcuts will be lost)
+---------------
 Version 2.8
 Changed skin name to Confluence++ (skin is not device-specific)
 Added ability to shutdown, reboot, and suspend ROOTED Android devices from the Shutdown Menu

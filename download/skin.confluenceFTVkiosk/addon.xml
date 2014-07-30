@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
   id="skin.confluenceFTVkiosk"
-  version="2.8"
+  version="2.9"
   name="Confluence++"
   provider-name="Jezz_X, Team XBMC, modified by elmerohueso">
   <requires>
     <import addon="xbmc.gui" version="5.0.0"/>
+	<import addon="script.favourites" version="5.0.2"/>
   </requires>
   <extension
     point="xbmc.gui.skin"
@@ -16,7 +17,12 @@
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Confluence skin by Jezz_X. (XBMC's default skin), modified by elmerohueso.</summary>
-    <description lang="en">The default Confluence skin with some modifications.</description>
+    <description lang="en">The default Confluence skin with some modifications.
+- 7 Home screen shortcuts per category
+- Set favorites as Home screen shortcuts
+- Toggle Power and Favorites buttons
+- Select Power button action
+- Shutdown, reboot, and suspend ROOTED Android devices from the Shutdown Menu</description>
     <platform>all</platform>
   </extension>
 </addon>
