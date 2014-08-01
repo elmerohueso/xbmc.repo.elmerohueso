@@ -1,3 +1,6 @@
+Version 3.0
+Added Android Apps entry to Home window to go straight to your apps
+---------------
 Version 2.9
 Added "FireTV" color theme (textures and background by freakylinuxguy, https://github.com/freakylinuxguy)
 Added ability to set any addon or favorite as a Home screen addon shortcut (previously created shortcuts will be lost)

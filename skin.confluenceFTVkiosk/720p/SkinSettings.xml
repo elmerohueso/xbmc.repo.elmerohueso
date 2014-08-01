@@ -615,6 +615,20 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
+					<control type="radiobutton" id="9998">
+						<description>Hide Android Apps Button</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$LOCALIZE[31111] - Android Apps [COLOR=grey3] ($LOCALIZE[0])[/COLOR]</label>
+						<onclick>Skin.ToggleSetting(HomeMenuNoAppsButton)</onclick>
+						<selected>Skin.HasSetting(HomeMenuNoAppsButton)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<visible>System.Platform.Android</visible>
+					</control>
 					<control type="radiobutton" id="226">
 						<description>Hide Programs Button</description>
 						<width>750</width>
