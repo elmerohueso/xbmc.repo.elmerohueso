@@ -48,6 +48,23 @@
   </extension>
 </addon>
 
+<addon id="script.program.FTVdisneyjr"
+  name="Watch Disney Junior"
+  version="1.1"
+  provider-name="elmerohueso">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>android</platform>
+    <summary lang="en">Watch Disney Junior shortcut for Android</summary>
+    <description lang="en">Launches the Watch Disney Junior app on the Android.  Can be added to the Home screen under the video categories for quick access.</description>
+	<disclaimer>Must already have the Watch Disney Junior app installed.</disclaimer>
+  </extension>
+</addon>
+
 <addon id="script.program.FTVhulu"
   name="Hulu Plus"
   version="1.1"
