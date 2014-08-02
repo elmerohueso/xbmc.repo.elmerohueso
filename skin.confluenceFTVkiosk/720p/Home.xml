@@ -942,7 +942,7 @@
 					</item>
 					<item id="9999">
 						<label>ANDROID APPS</label>
-						<onclick>ActivateWindow(Programs,androidapp://sources/apps/)</onclick>
+						<onclick>ActivateWindow(Programs,androidapp://sources/apps/,return)</onclick>
 						<icon>-</icon>
 						<thumb>-</thumb>
 						<visible>System.Platform.Android + !Skin.HasSetting(HomeMenuNoAppsButton)</visible>
@@ -1034,6 +1034,18 @@
 				<include>HomeAddonsCommonLayout</include>
 				<content>
 					<include>HomeAddonItemsPrograms</include>
+				</content>
+			</control>
+			<control type="fixedlist" id="706">
+				<animation effect="slide" start="0,0" end="-91,0" time="0" condition="StringCompare(Container(706).NumItems,2) | StringCompare(Container(706).NumItems,4 | StringCompare(Container(706).NumItems,6)">conditional</animation>
+				<visible>Container(9000).HasFocus(9999)</visible>
+				<onleft>706</onleft>
+				<onright>706</onright>
+				<onup>9001</onup>
+				<ondown>10</ondown>
+				<include>HomeAddonsCommonLayout</include>
+				<content>
+					<include>HomeAddonItemsApps</include>
 				</content>
 			</control>
 		</control>

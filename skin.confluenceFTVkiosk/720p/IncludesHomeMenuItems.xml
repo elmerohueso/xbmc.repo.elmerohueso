@@ -488,4 +488,55 @@
 			<visible>!IsEmpty(Skin.String(ProgramAddonSet.7.Path))</visible>
 		</item>
 	</include>
+	<include name="HomeAddonItemsApps">
+		<item>
+			<label>$INFO[Skin.String(AppAddonSet.1.Label)]</label>
+			<onclick>$INFO[Skin.String(AppAddonSet.1.Path)]</onclick>
+			<icon>DefaultAddon.png</icon>
+			<thumb>$INFO[Skin.String(AppAddonSet.1.icon)]</thumb>
+			<visible>!IsEmpty(Skin.String(AppAddonSet.1.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AppAddonSet.2.Label)]</label>
+			<onclick>$INFO[Skin.String(AppAddonSet.2.Path)]</onclick>
+			<icon>DefaultAddon.png</icon>
+			<thumb>$INFO[Skin.String(AppAddonSet.2.icon)]</thumb>
+			<visible>!IsEmpty(Skin.String(AppAddonSet.2.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AppAddonSet.3.Label)]</label>
+			<onclick>$INFO[Skin.String(AppAddonSet.3.Path)]</onclick>
+			<icon>DefaultAddon.png</icon>
+			<thumb>$INFO[Skin.String(AppAddonSet.3.icon)]</thumb>
+			<visible>!IsEmpty(Skin.String(AppAddonSet.3.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AppAddonSet.4.Label)]</label>
+			<onclick>$INFO[Skin.String(AppAddonSet.4.Path)]</onclick>
+			<icon>DefaultAddon.png</icon>
+			<thumb>$INFO[Skin.String(AppAddonSet.4.icon)]</thumb>
+			<visible>!IsEmpty(Skin.String(AppAddonSet.4.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AppAddonSet.5.Label)]</label>
+			<onclick>$INFO[Skin.String(AppAddonSet.5.Path)]</onclick>
+			<icon>DefaultAddon.png</icon>
+			<thumb>$INFO[Skin.String(AppAddonSet.5.icon)]</thumb>
+			<visible>!IsEmpty(Skin.String(AppAddonSet.5.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AppAddonSet.6.Label)]</label>
+			<onclick>$INFO[Skin.String(AppAddonSet.6.Path)]</onclick>
+			<icon>DefaultAddon.png</icon>
+			<thumb>$INFO[Skin.String(AppAddonSet.6.icon)]</thumb>
+			<visible>!IsEmpty(Skin.String(AppAddonSet.6.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AppAddonSet.7.Label)]</label>
+			<onclick>$INFO[Skin.String(AppAddonSet.7.Path)]</onclick>
+			<icon>DefaultAddon.png</icon>
+			<thumb>$INFO[Skin.String(AppAddonSet.7.icon)]</thumb>
+			<visible>!IsEmpty(Skin.String(AppAddonSet.7.Path))</visible>
+		</item>
+	</include>
 </includes>

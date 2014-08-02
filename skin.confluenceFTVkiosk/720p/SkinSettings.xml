@@ -1230,6 +1230,115 @@
 							<onclick>SetProperty(UsrSelectBtn,ProgramAddonSet.7,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
+						<control type="label" id="460">
+							<width>750</width>
+							<height>45</height>
+							<font>font13_title</font>
+							<label>Home Page Android Apps Sub-menu</label>
+							<textcolor>blue</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<visible>System.Platform.Android</visible>
+						</control>
+						<control type="button" id="461">
+							<width>750</width>
+							<height>40</height>
+							<font>font13</font>
+							<label>Shortcut [B]1[/B]</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(AppAddonSet.1.Label)][/COLOR]</label2>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus>MenuItemFO.png</texturefocus>
+							<texturenofocus>MenuItemNF.png</texturenofocus>
+							<onclick>SetProperty(UsrSelectBtn,AppAddonSet.1,home)</onclick>
+							<onclick>ActivateWindow(2119)</onclick>
+							<visible>System.Platform.Android</visible>
+						</control>
+						<control type="button" id="462">
+							<width>750</width>
+							<height>40</height>
+							<font>font13</font>
+							<label>Shortcut [B]2[/B]</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(AppAddonSet.2.Label)][/COLOR]</label2>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus>MenuItemFO.png</texturefocus>
+							<texturenofocus>MenuItemNF.png</texturenofocus>
+							<onclick>SetProperty(UsrSelectBtn,AppAddonSet.2,home)</onclick>
+							<onclick>ActivateWindow(2119)</onclick>
+							<visible>System.Platform.Android</visible>
+						</control>
+						<control type="button" id="463">
+							<width>750</width>
+							<height>40</height>
+							<font>font13</font>
+							<label>Shortcut [B]3[/B]</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(AppAddonSet.3.Label)][/COLOR]</label2>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus>MenuItemFO.png</texturefocus>
+							<texturenofocus>MenuItemNF.png</texturenofocus>
+							<onclick>SetProperty(UsrSelectBtn,AppAddonSet.3,home)</onclick>
+							<onclick>ActivateWindow(2119)</onclick>
+							<visible>System.Platform.Android</visible>
+						</control>
+						<control type="button" id="464">
+							<width>750</width>
+							<height>40</height>
+							<font>font13</font>
+							<label>Shortcut [B]4[/B]</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(AppAddonSet.4.Label)][/COLOR]</label2>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus>MenuItemFO.png</texturefocus>
+							<texturenofocus>MenuItemNF.png</texturenofocus>
+							<onclick>SetProperty(UsrSelectBtn,AppAddonSet.4,home)</onclick>
+							<onclick>ActivateWindow(2119)</onclick>
+							<visible>System.Platform.Android</visible>
+						</control>
+						<control type="button" id="465">
+							<width>750</width>
+							<height>40</height>
+							<font>font13</font>
+							<label>Shortcut [B]5[/B]</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(AppAddonSet.5.Label)][/COLOR]</label2>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus>MenuItemFO.png</texturefocus>
+							<texturenofocus>MenuItemNF.png</texturenofocus>
+							<onclick>SetProperty(UsrSelectBtn,AppAddonSet.5,home)</onclick>
+							<onclick>ActivateWindow(2119)</onclick>
+							<visible>System.Platform.Android</visible>
+						</control>
+						<control type="button" id="466">
+							<width>750</width>
+							<height>40</height>
+							<font>font13</font>
+							<label>Shortcut [B]6[/B]</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(AppAddonSet.6.Label)][/COLOR]</label2>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus>MenuItemFO.png</texturefocus>
+							<texturenofocus>MenuItemNF.png</texturenofocus>
+							<onclick>SetProperty(UsrSelectBtn,AppAddonSet.6,home)</onclick>
+							<onclick>ActivateWindow(2119)</onclick>
+							<visible>System.Platform.Android</visible>
+						</control>
+						<control type="button" id="467">
+							<width>750</width>
+							<height>40</height>
+							<font>font13</font>
+							<label>Shortcut [B]7[/B]</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(AppAddonSet.7.Label)][/COLOR]</label2>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus>MenuItemFO.png</texturefocus>
+							<texturenofocus>MenuItemNF.png</texturenofocus>
+							<onclick>SetProperty(UsrSelectBtn,AppAddonSet.7,home)</onclick>
+							<onclick>ActivateWindow(2119)</onclick>
+							<visible>System.Platform.Android</visible>
+						</control>
 					</control>
 				</control>
 				<control type="scrollbar" id="61">
