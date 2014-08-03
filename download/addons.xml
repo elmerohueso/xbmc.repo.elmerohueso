@@ -248,7 +248,7 @@
 
 <addon
   id="skin.confluenceFTVkiosk"
-  version="2.9"
+  version="3.0"
   name="Confluence++"
   provider-name="Jezz_X, Team XBMC, modified by elmerohueso">
   <requires>
