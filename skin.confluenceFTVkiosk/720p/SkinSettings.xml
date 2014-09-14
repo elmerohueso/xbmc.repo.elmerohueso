@@ -367,6 +367,15 @@
 						<onclick>XBMC.RunScript(special://skin/resources/lib/checksu.py)</onclick>
 						<visible>System.Platform.Android</visible>
 					</control>
+					<control type="label" id="111">
+						<width>750</width>
+						<height>45</height>
+						<font>font13</font>
+						<label>XBMC has SU permissions</label>
+						<textcolor>grey2</textcolor>
+						<visible>System.Platform.Android</visible>
+						<visible>Skin.HasSetting(HasRoot)</visible>
+					</control>
 				</control>
 				<control type="scrollbar" id="60">
 					<left>1060</left>

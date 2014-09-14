@@ -1,3 +1,6 @@
+Version 2.8
+Enabled the ability to stop video if the screensaver is set to kick off while video is paused (when "Use dim if paused during video playback" is unchecked)
+---------------
 Version 2.7
 Things didn't work so well.  Back to needing 2-button wake.
 ---------------

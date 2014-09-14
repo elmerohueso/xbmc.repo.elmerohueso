@@ -231,7 +231,7 @@
 
 <addon id="script.screensaver.sleepandroid"
   name="Android Power Options"
-  version="2.7"
+  version="2.8"
   provider-name="elmerohueso">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
