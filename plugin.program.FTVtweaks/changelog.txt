@@ -1,3 +1,6 @@
+Version 1.7
+Updated keymap 3 (http://wiki.xbmc.org/index.php?title=Alternative_keymaps_for_Fire_TV_remote#Keymap_3)
+---------------
 Version 1.6
 Small layout fixes
 ---------------

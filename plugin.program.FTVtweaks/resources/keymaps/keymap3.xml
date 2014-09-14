@@ -33,4 +33,9 @@
       <fastforward>FastForward</fastforward>
     </keyboard>
   </FullscreenVideo>
+  <VideoMenu>
+    <keyboard>
+      <backspace>Stop</backspace>
+    </keyboard>
+  </VideoMenu>
 </keymap>
