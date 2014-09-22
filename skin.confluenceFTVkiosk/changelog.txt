@@ -1,8 +1,11 @@
 Version 3.0.1
-Deactivate Check SU Permissions button once they have been granted
+[Android] Android Options (General Settings) now indicates when SU Permissions have been granted
+[Android, bug] Checking SU permissions multiple times no longer unsets the "rooted" flag
+Moved Power Button Settings to its own page in Skin Setting (hidden if Power Button is disabled)
+Added ability to select which options are visible in the shutdown menu (except "Exit" and "Log off")
 ---------------
 Version 3.0
-Added Android Apps entry to Home window to go straight to your apps
+[Android] Added Android Apps entry to Home window to go straight to your apps (can be hidden in Home Window Option in Skin Settings, shown is default)
 ---------------
 Version 2.9
 Added "FireTV" color theme (textures and background by freakylinuxguy, https://github.com/freakylinuxguy)
@@ -10,8 +13,8 @@ Added ability to set any addon or favorite as a Home screen addon shortcut (prev
 ---------------
 Version 2.8
 Changed skin name to Confluence++ (skin is not device-specific)
-Added ability to shutdown, reboot, and suspend ROOTED Android devices from the Shutdown Menu
-Added check for root access on Android devices (General Settings in Skin Settings)
+[Android] Added ability to shutdown, reboot, and suspend ROOTED Android devices from the Shutdown Menu
+[Android] Added check for root access on Android devices (General Settings in Skin Settings)
 ---------------
 Version 2.5
 Added option to toggle Power button (Home Window Options in Skin Settings, enabled is default)

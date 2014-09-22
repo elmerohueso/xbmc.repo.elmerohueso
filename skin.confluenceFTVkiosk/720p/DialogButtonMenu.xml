@@ -103,6 +103,7 @@
 				<pulseonselect>no</pulseonselect>
 				<font>font13</font>
 				<label>13016</label>
+				<visible>!Skin.HasSetting(1DisableShutdownButton)</visible>
 			</control>
 			<control type="button" id="4">
 				<description>Custom Shutdown Timer</description>
@@ -120,6 +121,7 @@
 				<label>20150</label>
 				<visible>!System.HasAlarm(shutdowntimer)</visible>
 				<visible>System.CanPowerDown | System.CanSuspend | System.CanHibernate</visible>
+				<visible>!Skin.HasSetting(1DisableShutdownTimerButton)</visible>
 			</control>
 			<control type="button" id="5">
 				<description>Cancel Shutdown Timer</description>
@@ -153,6 +155,7 @@
 				<pulseonselect>no</pulseonselect>
 				<font>font13</font>
 				<label>13011</label>
+				<visible>!Skin.HasSetting(1DisableSuspendButton)</visible>
 			</control>
 			<control type="button" id="7">
 				<description>Hibernate button</description>
@@ -169,6 +172,7 @@
 				<pulseonselect>no</pulseonselect>
 				<font>font13</font>
 				<label>13010</label>
+				<visible>!Skin.HasSetting(1DisableHibernateButton)</visible>
 			</control>
 			<control type="button" id="8">
 				<description>Reboot button</description>
@@ -186,6 +190,7 @@
 				<pulseonselect>no</pulseonselect>
 				<font>font13</font>
 				<label>13013</label>
+				<visible>!Skin.HasSetting(1DisableRebootButton)</visible>
 			</control>
 			<control type="button" id="9">
 				<description>Logoff button</description>
