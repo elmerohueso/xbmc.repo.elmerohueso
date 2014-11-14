@@ -274,6 +274,34 @@
   </extension>
 </addon>
 
+<addon
+  id="skin.confluenceplusplus.helix"
+  version="1.0.0"
+  name="Confluence++ (Helix)"
+  provider-name="Jezz_X, Team Kodi, elmerohueso">
+  <requires>
+    <import addon="xbmc.gui" version="5.3.0"/>
+	<import addon="script.favourites" version="5.0.2"/>
+  </requires>
+  <extension
+    point="xbmc.gui.skin"
+    defaultthemename="textures.xbt"
+    debugging="false"
+    effectslowdown="0.75">
+    <res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Confluence skin by Jezz_X. (XBMC's default skin), modified by elmerohueso.</summary>
+    <description lang="en">The default Confluence skin with some modifications.
+- 7 Home screen shortcuts per category
+- Set favorites as Home screen shortcuts
+- Toggle Power and Favorites buttons
+- Select Power button action
+- Shutdown, reboot, and suspend ROOTED Android devices from the Shutdown Menu</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="xbmc.repo.elmerohueso" name="elmerohueso's Add-on Repository" version="1.0" provider-name="elmerohueso">
     <extension point="xbmc.addon.repository" name="elmerohueso's Add-on Repository">
         <info>http://github.com/elmerohueso/xbmc.repo.elmerohueso/raw/master/download/addons.xml</info>

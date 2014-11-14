@@ -1,0 +1,41 @@
+Version 1.0.0
+Initial migration of Confluence++ for Helix
+
+---------------
+[B]Original Confluence++ (Gotham)[/B]
+Version 3.0.1
+[Android] Android Options (General Settings) now indicates when SU Permissions have been granted
+[Android, bug] Checking SU permissions multiple times no longer unsets the "rooted" flag
+Moved Power Button Settings to its own page in Skin Setting (hidden if Power Button is disabled)
+Added ability to select which options are visible in the shutdown menu (except "Exit" and "Log off")
+---------------
+Version 3.0
+[Android] Added Android Apps entry to Home window to go straight to your apps (can be hidden in Home Window Option in Skin Settings, shown is default)
+---------------
+Version 2.9
+Added "FireTV" color theme (textures and background by freakylinuxguy, https://github.com/freakylinuxguy)
+Added ability to set any addon or favorite as a Home screen addon shortcut (previously created shortcuts will be lost)
+---------------
+Version 2.8
+Changed skin name to Confluence++ (skin is not device-specific)
+[Android] Added ability to shutdown, reboot, and suspend ROOTED Android devices from the Shutdown Menu
+[Android] Added check for root access on Android devices (General Settings in Skin Settings)
+---------------
+Version 2.5
+Added option to toggle Power button (Home Window Options in Skin Settings, enabled is default)
+Added option for Power button to open the Shutdown menu or just Logoff (Logoff is default)
+Added Power button back to login dialog
+---------------
+Version 2.4
+Added option to toggle Favorites button (Home Window Options in Skin Settings, disabled is default)
+Swapped positions of Favorites and Power buttons
+---------------
+Version 2.3
+Allowed up to 7 Home screen addon shortcuts for Videos, Music, Pictures, and Program categories (increased from 5)
+---------------
+Version 2.2.16
+Based on default Confluence skin
+Removed Favorites button on Home screen (since it's directly accessible via the keymap)
+Removed "Exit" option on Home screen (since it's intended to run as the main launcher)
+Changed Power button action to Logoff profile
+Removed Power button from Login dialog
