@@ -3,7 +3,7 @@ import xbmcgui
 import os
 
 appname="Netflix"
-packagename="org.chromium.content_shell_apk"
+packagename="com.netflix.ninja"
 
 def launcher():
 	packagepath = os.popen('pm path %s' % packagename).read()
