@@ -1,3 +1,6 @@
+Version 1.4
+Added support for new Netflix app (if the original isn't found, it will try to start the new one)
+---------------
 Version 1.3
 Cleaned code
 Added warning if app is not installed

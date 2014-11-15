@@ -100,7 +100,7 @@
 
 <addon id="script.program.FTVnetflix"
   name="Netflix"
-  version="1.3"
+  version="1.4"
   provider-name="elmerohueso">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
