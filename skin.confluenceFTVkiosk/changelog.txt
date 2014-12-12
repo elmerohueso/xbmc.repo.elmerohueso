@@ -1,3 +1,6 @@
+Version 3.0.2
+Fixed syntax errors in SU check
+---------------
 Version 3.0.1
 [Android] Android Options (General Settings) now indicates when SU Permissions have been granted
 [Android, bug] Checking SU permissions multiple times no longer unsets the "rooted" flag

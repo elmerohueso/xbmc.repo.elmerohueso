@@ -1,6 +1,7 @@
 import os
 import xbmcvfs
 import xbmc
+import xbmcgui
 
 skinpath = xbmc.translatePath('special://skin')
 
@@ -13,9 +14,8 @@ def isrooted():
 
 def getperm():
     os.system("su -c 'echo rooted > %s/rooted'" % skinpath)
-    if xbmcvfs.exists("%s/rooted" % skinpath):
-		if xbmc.executebuiltin("!Skin.HasSetting(HasRoot)"):
-            xbmc.executebuiltin("Skin.ToggleSetting(HasRoot)")
+    if xbmcvfs.exists("%s/rooted" % skinpath) and xbmc.executebuiltin("!Skin.HasSetting(HasRoot)"):
+        xbmc.executebuiltin("Skin.ToggleSetting(HasRoot)")
     else:
         xbmcgui.Dialog().ok("Error","You did not give XBMC SU permissions.  Please try again.")
         

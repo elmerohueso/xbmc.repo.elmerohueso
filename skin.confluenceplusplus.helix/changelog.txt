@@ -1,6 +1,8 @@
+Version 1.0.1
+Fixed syntax errors in SU check
+---------------
 Version 1.0.0
 Initial migration of Confluence++ for Helix
-
 ---------------
 [B]Original Confluence++ (Gotham)[/B]
 Version 3.0.1
