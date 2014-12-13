@@ -1,3 +1,7 @@
+Version 1.0.2
+More SU check fixes
+Changed dialog references from "XBMC" to "Kodi"
+---------------
 Version 1.0.1
 Fixed syntax errors in SU check
 ---------------

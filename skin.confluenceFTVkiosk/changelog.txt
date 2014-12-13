@@ -1,3 +1,6 @@
+Version 3.0.3
+More SU check fixes
+---------------
 Version 3.0.2
 Fixed syntax errors in SU check
 ---------------

@@ -377,7 +377,7 @@
 						<width>750</width>
 						<height>45</height>
 						<font>font13</font>
-						<label>XBMC has SU permissions</label>
+						<label>Kodi has SU permissions</label>
 						<textcolor>grey2</textcolor>
 						<visible>System.Platform.Android</visible>
 						<visible>Skin.HasSetting(HasRoot)</visible>
@@ -1357,7 +1357,7 @@
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
-							<label>Logoff XBMC Profile</label>
+							<label>Logoff Kodi Profile</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
