@@ -276,7 +276,7 @@
 
 <addon
   id="skin.confluenceplusplus.helix"
-  version="1.0.2"
+  version="1.0.3"
   name="Confluence++ (Helix)"
   provider-name="Jezz_X, Team Kodi, elmerohueso">
   <requires>

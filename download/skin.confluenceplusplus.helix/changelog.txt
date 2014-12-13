@@ -1,3 +1,6 @@
+Version 1.0.3
+Corrected Home screen addon position and scrolling
+---------------
 Version 1.0.2
 More SU check fixes
 Changed dialog references from "XBMC" to "Kodi"
