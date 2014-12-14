@@ -248,7 +248,7 @@
 
 <addon
   id="skin.confluenceFTVkiosk"
-  version="3.0.3"
+  version="3.0.4"
   name="Confluence++"
   provider-name="Jezz_X, Team XBMC, modified by elmerohueso">
   <requires>
@@ -276,7 +276,7 @@
 
 <addon
   id="skin.confluenceplusplus.helix"
-  version="1.0.3"
+  version="1.0.4"
   name="Confluence++ (Helix)"
   provider-name="Jezz_X, Team Kodi, elmerohueso">
   <requires>

@@ -1,3 +1,6 @@
+Version 1.0.4
+Another attempt at fixing SU check
+---------------
 Version 1.0.3
 Corrected Home screen addon position and scrolling
 ---------------

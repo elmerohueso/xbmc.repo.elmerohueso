@@ -15,11 +15,8 @@ def isrooted():
 def getperm():
 	os.system("su -c 'echo rooted > %s/rooted'" % skinpath)
 	if xbmcvfs.exists("%s/rooted" % skinpath):
-		if xbmc.executebuiltin("!Skin.HasSetting(HasRoot)"):
-			xbmc.executebuiltin("Skin.ToggleSetting(HasRoot)")
-			xbmcgui.Dialog().ok("Success","XBMC has been granted SU permissions.")
-		else:
-			xbmcgui.Dialog().ok("Nothing Done","XBMC already has SU permissions.")
+		xbmc.executebuiltin("Skin.SetBool(HasRoot)")
+		xbmcgui.Dialog().ok("Success","XBMC has been granted SU permissions.")
 	else:
 		xbmcgui.Dialog().ok("Error","You did not give XBMC SU permissions.  Please try again.")
 

@@ -379,8 +379,7 @@
 						<font>font13</font>
 						<label>XBMC has SU permissions</label>
 						<textcolor>grey2</textcolor>
-						<visible>System.Platform.Android</visible>
-						<visible>Skin.HasSetting(HasRoot)</visible>
+						<visible>System.Platform.Android + Skin.HasSetting(HasRoot)</visible>
 					</control>
 				</control>
 				<control type="scrollbar" id="60">
