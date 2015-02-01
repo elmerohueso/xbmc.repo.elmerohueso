@@ -1,3 +1,6 @@
+Version 1.9
+Changed Play to PlayPause in keymap 3
+---------------
 Version 1.8
 Fixed keymaps (keycodes for menu, fastforward, and rewind buttons changed)
 ---------------

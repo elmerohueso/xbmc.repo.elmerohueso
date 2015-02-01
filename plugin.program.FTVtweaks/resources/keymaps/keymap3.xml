@@ -8,7 +8,7 @@
       <right>Right</right>
       <enter>Select</enter>
       <key id="61656">ContextMenu</key>
-      <play_pause>Play</play_pause>
+      <play_pause>PlayPause</play_pause>
       <backspace>Back</backspace>
       <key id="61636">PageUp</key>
       <key id="61637">PageDown</key>
@@ -27,7 +27,7 @@
       <right>StepForward</right>
       <return>OSD</return>
       <key id="61656">NextSubtitle</key>
-      <play_pause>Play</play_pause>
+      <play_pause>PlayPause</play_pause>
       <backspace>Stop</backspace>
       <key id="61636">Rewind</key>
       <key id="61637">FastForward</key>

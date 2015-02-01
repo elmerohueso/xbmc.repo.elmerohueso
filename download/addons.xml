@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.program.FTVtweaks"
   name="XBMC tweaks for FTV"
-  version="1.8"
+  version="1.9"
   provider-name="elmerohueso">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
