@@ -7,16 +7,16 @@
       <left>Left</left>
       <right>Right</right>
       <enter>Select</enter>
-      <menu>ContextMenu</menu>
+      <key id="61656">ContextMenu</key>
       <play_pause>Play</play_pause>
       <backspace>Back</backspace>
-      <rewind>PageUp</rewind>
-      <fastforward>PageDown</fastforward>
+      <key id="61636">PageUp</key>
+      <key id="61637">PageDown</key>
     </keyboard>
   </Global>
   <Home>
     <keyboard>
-      <menu>XBMC.ActivateWindow(favourites)</menu>
+      <key id="61656">XBMC.ActivateWindow(favourites)</key>
     </keyboard>
   </Home>
   <FullscreenVideo>
@@ -26,11 +26,11 @@
       <left>StepBack</left>
       <right>StepForward</right>
       <return>OSD</return>
-      <menu>ShowSubtitles</menu>
+      <key id="61656">NextSubtitle</key>
       <play_pause>Play</play_pause>
       <backspace>Stop</backspace>
-      <rewind>Rewind</rewind>
-      <fastforward>FastForward</fastforward>
+      <key id="61636">Rewind</key>
+      <key id="61637">FastForward</key>
     </keyboard>
   </FullscreenVideo>
   <VideoMenu>
