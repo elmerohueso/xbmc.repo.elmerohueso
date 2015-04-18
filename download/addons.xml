@@ -215,7 +215,7 @@
   </extension>
 </addon>
 
-<addon id="script.screensaver.logoff" name="Logoff" version="1.0" provider-name="elmerohueso">
+<addon id="script.screensaver.logoff" name="Logoff" version="1.1" provider-name="elmerohueso">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -224,8 +224,8 @@
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
-    <summary>"Screensaver" that will log off your XBMC profile</summary>
-    <description>Not really a screensaver, but makes your system automatically log off an XBMC profile according to your "Screensaver time".</description>
+    <summary>"Screensaver" that will log off your XBMC/Kodi profile</summary>
+    <description>Not really a screensaver, but makes your system automatically log off the active XBMC/Kodi profile according to your "Screensaver time".</description>
   </extension>
 </addon>
 

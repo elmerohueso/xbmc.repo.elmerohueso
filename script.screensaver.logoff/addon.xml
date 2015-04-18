@@ -8,8 +8,7 @@
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
-    <summary>Log off your XBMC profile</summary>
-    <description>Automatically logs off your XBMC profile then puts your device to sleep.</description>
-    <disclaimer>Sleep function currently only implemented on Android,</disclaimer>
+    <summary>"Screensaver" that will log off your XBMC/Kodi profile</summary>
+    <description>Not really a screensaver, but makes your system automatically log off the active XBMC/Kodi profile according to your "Screensaver time".</description>
   </extension>
 </addon>

@@ -31,7 +31,7 @@
 						<top>15</top>
 						<width>380</width>
 						<height>25</height>
-						<font>font24_title</font>
+						<font>font13_title</font>
 						<textcolor>grey3</textcolor>
 						<align>right</align>
 						<aligny>center</aligny>
@@ -54,7 +54,7 @@
 						<top>15</top>
 						<width>380</width>
 						<height>25</height>
-						<font>font24_title</font>
+						<font>font13_title</font>
 						<textcolor>white</textcolor>
 						<align>right</align>
 						<aligny>center</aligny>
@@ -69,10 +69,6 @@
 					</item>
 					<item id="2">
 						<label>Splashscreen Tweaks</label>
-						<onclick>noop</onclick>
-					</item>
-					<item id="3">
-						<label>Other</label>
 						<onclick>noop</onclick>
 					</item>
 				</content>
@@ -343,57 +339,6 @@
 						<height>545</height>
 						<width>970</width>
 						<texture>splash3.png</texture>
-					</control>
-				</control>
-				<!--Category 3-->
-				<control type="group">
-					<control type="grouplist" id="9004">
-						<visible>Container(9000).Hasfocus(3)</visible>
-						<left>290</left>
-						<top>0</top>
-						<width>1005</width>
-						<height>700</height>
-						<itemgap>-1</itemgap>
-						<onleft>9000</onleft>
-						<control type="label" id="400">
-							<width>1005</width>
-							<height>45</height>
-							<font>font13_title</font>
-							<label>Other Recommendations</label>
-							<textcolor>blue</textcolor>
-							<shadowcolor>black</shadowcolor>
-							<align>center</align>
-							<aligny>center</aligny>
-						</control>
-						<control type="textbox" id="401">
-							<width>970</width>
-							<height>80</height>
-							<font>font13</font>
-							<label>You've already set "Remote control sends keyboard presses", so you're good to go.</label>
-							<visible>system.getbool(input.remoteaskeyboard)</visible>
-							<textcolor>white</textcolor>
-						</control>
-						<control type="textbox" id="401">
-							<width>970</width>
-							<height>80</height>
-							<font>font13</font>
-							<label>Click the button below and set "Remote control sends keyboard presses" under [COLOR red]Input devices[/COLOR] in order to use the on-screen keyboard.</label>
-							<visible>!system.getbool(input.remoteaskeyboard)</visible>
-							<textcolor>white</textcolor>
-						</control>
-						<control type="button" id="402">
-							<width>970</width>
-							<height>40</height>
-							<font>font13</font>
-							<label>Open "System Settings"</label>
-							<textcolor>grey2</textcolor>
-							<focusedcolor>white</focusedcolor>
-							<texturefocus>MenuItemFO.png</texturefocus>
-							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<visible>!system.getbool(input.remoteaskeyboard)</visible>
-							<align>center</align>
-							<onclick>activatewindow(systemsettings)</onclick>
-						</control>
 					</control>
 				</control>
 			</control>
