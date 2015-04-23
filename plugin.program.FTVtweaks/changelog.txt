@@ -1,3 +1,7 @@
+Version 2.0
+Fixed hidden menu text
+Added option to disable HW acceleration just for DivX/Xvid
+---------------
 Version 1.9
 Changed Play to PlayPause in keymap 3
 ---------------

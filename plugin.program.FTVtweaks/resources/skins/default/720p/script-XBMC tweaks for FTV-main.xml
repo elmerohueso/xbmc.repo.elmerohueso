@@ -26,21 +26,26 @@
 				<scrolltime>300</scrolltime>
 				<!--Define category layout, unfocused-->
 				<itemlayout height="80" width="260">
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>260</width>
+						<height>81</height>
+						<texture border="5">MenuItemNF.png</texture>
+					</control>
 					<control type="label">
-						<left>250</left>
+						<left>10</left>
 						<top>15</top>
-						<width>380</width>
+						<width>240</width>
 						<height>25</height>
-						<font>font13_title</font>
+						<font>font24_title</font>
 						<textcolor>grey3</textcolor>
 						<align>right</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
-				<!--Define category layout, focused-->
 				<focusedlayout height="80" width="260">
-					<!--Blue overlay-->
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
@@ -50,11 +55,11 @@
 						<animation effect="fade" start="100" end="30" time="100" condition="!Control.HasFocus(9000)">Conditional</animation>
 					</control>
 					<control type="label">
-						<left>250</left>
+						<left>10</left>
 						<top>15</top>
-						<width>380</width>
+						<width>240</width>
 						<height>25</height>
-						<font>font13_title</font>
+						<font>font24_title</font>
 						<textcolor>white</textcolor>
 						<align>right</align>
 						<aligny>center</aligny>
@@ -64,11 +69,15 @@
 				<!--Define category titles-->
 				<content>
 					<item id="1">
-						<label>Keymap Tweaks</label>
+						<label>Keymaps</label>
 						<onclick>noop</onclick>
 					</item>
 					<item id="2">
-						<label>Splashscreen Tweaks</label>
+						<label>Splashscreens</label>
+						<onclick>noop</onclick>
+					</item>
+					<item id="3">
+						<label>Other</label>
 						<onclick>noop</onclick>
 					</item>
 				</content>
@@ -339,6 +348,59 @@
 						<height>545</height>
 						<width>970</width>
 						<texture>splash3.png</texture>
+					</control>
+				</control>
+				<!--Category 3-->
+				<control type="group">
+					<control type="grouplist" id="9004">
+						<visible>Container(9000).Hasfocus(3)</visible>
+						<left>290</left>
+						<top>0</top>
+						<width>1005</width>
+						<height>700</height>
+						<itemgap>-1</itemgap>
+						<onleft>9000</onleft>
+						<control type="label" id="400">
+							<width>1005</width>
+							<height>45</height>
+							<font>font13_title</font>
+							<label>Other Recommendations</label>
+							<textcolor>blue</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+						</control>
+						<control type="textbox" id="401">
+							<width>970</width>
+							<height>80</height>
+							<font>font13</font>
+							<label>If you commonly experience jerking/stuttering playback with DivX and Xvid files, please follow the steps below to disable hardware acceleration [COLOR red]only[/COLOR] for those video types.  This only needs to be done once.</label>
+							<textcolor>white</textcolor>
+						</control>
+						<control type="button" id="402">
+							<width>970</width>
+							<height>40</height>
+							<font>font13</font>
+							<label>Click here to open the Video Settings menu, then disable MediaCodec under "Acceleration"</label>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus>MenuItemFO.png</texturefocus>
+							<texturenofocus>MenuItemNF.png</texturenofocus>
+							<align>center</align>
+							<onclick>activatewindow(videossettings)</onclick>
+						</control>
+						<control type="button" id="403">
+							<width>970</width>
+							<height>40</height>
+							<font>font13</font>
+							<label>Click here to disable libstagefright acceleration for Mpeg4 videos</label>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus>MenuItemFO.png</texturefocus>
+							<texturenofocus>MenuItemNF.png</texturenofocus>
+							<align>center</align>
+							<onclick>XBMC.RunScript(special://home/addons/plugin.program.FTVtweaks/resources/lib/disablemp4hwaccel.py)</onclick>
+						</control>
 					</control>
 				</control>
 			</control>

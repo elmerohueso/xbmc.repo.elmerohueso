@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.program.FTVtweaks"
-  name="XBMC tweaks for FTV"
-  version="1.9" 
+  name="Kodi tweaks for FTV"
+  version="2.0" 
   provider-name="elmerohueso">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -9,8 +9,7 @@
   <extension point="xbmc.python.script" library="addon.py">
   </extension>
   <extension point="xbmc.addon.metadata">
-    <platform>android</platform>
     <summary lang="en">Tweaks for the Amazon FireTV</summary>
-    <description lang="en">A set of tweaks to improve your XBMC experience on the Amazon FireTV.</description>
+    <description lang="en">A set of tweaks to improve your Kodi experience on the Amazon FireTV.</description>
   </extension>
 </addon>
