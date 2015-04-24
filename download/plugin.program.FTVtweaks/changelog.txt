@@ -1,3 +1,6 @@
+Version 2.1
+Better explanation on hw accel
+---------------
 Version 2.0.1
 Forgot to rename a file
 ---------------

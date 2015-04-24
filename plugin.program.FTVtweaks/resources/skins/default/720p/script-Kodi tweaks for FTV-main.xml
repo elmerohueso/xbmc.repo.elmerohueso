@@ -381,7 +381,7 @@
 							<width>970</width>
 							<height>40</height>
 							<font>font13</font>
-							<label>Click here to open the Video Settings menu, then disable MediaCodec under "Acceleration"</label>
+							<label>Click here, then disable MediaCodec and enable Libstagefright under "Acceleration"</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
@@ -393,7 +393,7 @@
 							<width>970</width>
 							<height>40</height>
 							<font>font13</font>
-							<label>Click here to disable libstagefright acceleration for Mpeg4 videos</label>
+							<label>Click here to disable Libstagefright acceleration for Mpeg4 videos</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>

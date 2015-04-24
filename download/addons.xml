@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.program.FTVtweaks"
   name="Kodi tweaks for FTV"
-  version="2.0.1"
+  version="2.1"
   provider-name="elmerohueso">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
