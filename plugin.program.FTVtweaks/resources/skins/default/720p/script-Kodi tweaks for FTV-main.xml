@@ -381,19 +381,19 @@
 							<width>970</width>
 							<height>40</height>
 							<font>font13</font>
-							<label>Click here, then disable MediaCodec and enable Libstagefright under "Acceleration"</label>
+							<label>1. Click here to disable MediaCodec and enable Libstagefright</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
 							<align>center</align>
-							<onclick>activatewindow(videossettings)</onclick>
+							<onclick>XBMC.RunScript(special://home/addons/plugin.program.FTVtweaks/resources/lib/togglehwaccel.py)</onclick>
 						</control>
 						<control type="button" id="403">
 							<width>970</width>
 							<height>40</height>
 							<font>font13</font>
-							<label>Click here to disable Libstagefright acceleration for Mpeg4 videos</label>
+							<label>2. Click here to disable Libstagefright acceleration for Mpeg4 videos</label>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>

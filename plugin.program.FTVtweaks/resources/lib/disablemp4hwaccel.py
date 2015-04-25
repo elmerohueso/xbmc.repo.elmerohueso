@@ -1,7 +1,7 @@
 import xbmc
 import xbmcgui
 import os.path
-import xml.etree.cElementTree as ET
+import xml.etree.ElementTree as ET
 
 filename = os.path.join(xbmc.translatePath('special://profile'), 'advancedsettings.xml')
 
@@ -32,4 +32,4 @@ except:
 
 addSetting('video', 'stagefright', 'usemp4codec', '0')
 writeSettings()
-xbmcgui.Dialog().ok("Complete","Change reflected in advancedsettings.xml. Please restart Kodi for change to take effect.")
+xbmcgui.Dialog().ok("Complete","Changes applied.\nPlease restart Kodi for change to take effect.")
