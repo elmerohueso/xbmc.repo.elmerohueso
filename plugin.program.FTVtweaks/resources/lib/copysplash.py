@@ -1,3 +1,4 @@
+import os
 import shutil
 import xbmcgui
 import xbmc

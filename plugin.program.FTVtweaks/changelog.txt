@@ -1,3 +1,6 @@
+Version 2.3
+Fixes Python imports
+---------------
 Version 2.2
 JSON-RPC to toggle hw accel
 Use ElementTree instead of cElementTree
